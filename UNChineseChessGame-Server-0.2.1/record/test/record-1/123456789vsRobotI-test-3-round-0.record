@@ -4,38 +4,11 @@ ROUND_START 0
 COLOR RED:P0 BLACK:P1
 INITIAL CHESS BOARD
 -------------------
-NIB4 NIR5 NIR4 NIB3 
-NIR0 NIB6 NIR2 NIB1 
-NIB5 NIR6 NIR1 NIB0 
-NIB2 NIB0 NIR0 NIR3 
+NIR6 NIB0 NIB4 NIR4 
+NIR5 NIB0 NIR3 NIB2 
+NIR0 NIB3 NIR2 NIR1 
+NIR0 NIB1 NIB6 NIB5 
 -------------------
-VALID_STEP RED SR1313
--------------------
-|##| |##| |##| |##| 
-|##| |##| |##| |B1| 
-|##| |##| |##| |##| 
-|##| |##| |##| |##| 
--------------------
-VALID_STEP BLACK SR0000
--------------------
-|B4| |##| |##| |##| 
-|##| |##| |##| |B1| 
-|##| |##| |##| |##| 
-|##| |##| |##| |##| 
--------------------
-VALID_STEP RED SR1212
--------------------
-|B4| |##| |##| |##| 
-|##| |##| |R2| |B1| 
-|##| |##| |##| |##| 
-|##| |##| |##| |##| 
--------------------
-VALID_STEP BLACK SR0101
--------------------
-|B4| |R5| |##| |##| 
-|##| |##| |R2| |B1| 
-|##| |##| |##| |##| 
-|##| |##| |##| |##| 
--------------------
-UNKOWN_EXCEPTION RED
+TIMEOUT RED 1
+ROUND_ERROR 0
 ROUND_END 0

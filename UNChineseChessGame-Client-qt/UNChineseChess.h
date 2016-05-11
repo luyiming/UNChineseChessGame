@@ -48,6 +48,8 @@ public:
     void makeMoves(Board& b, int color, QList<Board>& moves, QList<QList<int> > &msg);
     int evaluate(Board& b);
     void minimax();
+
+    void reset();
 };
 
 #endif // MAINWINDOW_H

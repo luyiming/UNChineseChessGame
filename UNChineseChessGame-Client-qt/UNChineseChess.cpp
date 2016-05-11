@@ -102,6 +102,7 @@ void Game::oneRound() {
     case 0:
         while (true) {
             step();
+            //minimax();
             if (observe() == 1) break;
             saveChessBoard();
             if (observe() == 1) break;
@@ -113,6 +114,7 @@ void Game::oneRound() {
             if (observe() == 1) break;
             saveChessBoard();
             step();
+            //minimax();
             if (observe() == 1) break;
             saveChessBoard();
         }
@@ -474,7 +476,8 @@ int Game::alphaBetaMax(Board& b, int depth, int alpha, int beta)
          return beta;   //beta-cutoff
       if(score > alpha)
       {
-         movemsg = msg[i];
+          if(depth == 6)
+             movemsg = msg[i];
          alpha = score; // alpha acts like max in MiniMax
       }
    }
@@ -620,6 +623,7 @@ void Game::makeMoves(Board& b, int color, QList<Board> & moves, QList<QList<int>
     }
 }
 
+
 int Game::evaluate(Board& b)
 {
     int score = 0;
@@ -695,6 +699,23 @@ int Game::evaluate(Board& b)
 
 int Game::tryMove(int r, int c)
 {
+    if(ownColor == 1)
+    {
+        if (observe() > 0)
+        {
+            roundOver(curRound);
+            if(curRound == ROUNDS)
+            {
+                gameOver();
+                close();
+                emit statusChanged("Close Socket\n");
+            }
+            else
+                roundStart(curRound);
+            return 1;
+        }
+        saveChessBoard();
+    }
     static int srcRow = -1, srcCol = -1, desRow = -1, desCol = -1;
     if(r == -1 && c == -1)
     {
@@ -720,20 +741,23 @@ int Game::tryMove(int r, int c)
         isSelected = false;
         movePiece(srcRow, srcCol, desRow, desCol);
     }
-    if (observe() > 0)
+    if(ownColor == 0)
     {
-        roundOver(curRound);
-        if(curRound == ROUNDS)
+        if (observe() > 0)
         {
-            gameOver();
-            close();
-            emit statusChanged("Close Socket\n");
+            roundOver(curRound);
+            if(curRound == ROUNDS)
+            {
+                gameOver();
+                close();
+                emit statusChanged("Close Socket\n");
+            }
+            else
+                roundStart(curRound);
+            return 1;
         }
-        else
-            roundStart(curRound);
-        return 1;
+        saveChessBoard();
     }
-    saveChessBoard();
     if (observe() > 0)
     {
         roundOver(curRound);
@@ -754,6 +778,23 @@ int Game::tryMove(int r, int c)
 
 void Game::minimax()
 {
+    if(ownColor == 1)
+    {
+        if (observe() > 0)
+        {
+            roundOver(curRound);
+            if(curRound == ROUNDS)
+            {
+                gameOver();
+                close();
+                emit statusChanged("Close Socket\n");
+            }
+            else
+                roundStart(curRound);
+            return;
+        }
+        saveChessBoard();
+    }
     movemsg.clear();
     int score1 = alphaBetaMax(board, 6, -100000, 100000);
     int score = -100000;
@@ -804,22 +845,30 @@ void Game::minimax()
         qDebug() << "move:" << movemsg.at(0) << movemsg.at(1) << movemsg.at(2) << movemsg.at(3);
     }
     else
-        noStep();
-
-    if (observe() > 0)
     {
-        roundOver(curRound);
-        if(curRound == ROUNDS)
-        {
-            gameOver();
-            close();
-            emit statusChanged("Close Socket\n");
-        }
-        else
-            roundStart(curRound);
-        return;
+        qDebug() << movemsg.size();
+        qDebug() << "nostep";
+        noStep();
     }
-    saveChessBoard();
+
+    if(ownColor == 0)
+    {
+        if (observe() > 0)
+        {
+            roundOver(curRound);
+            if(curRound == ROUNDS)
+            {
+                gameOver();
+                close();
+                emit statusChanged("Close Socket\n");
+            }
+            else
+                roundStart(curRound);
+            return;
+        }
+        saveChessBoard();
+    }
+
     if (observe() > 0)
     {
         roundOver(curRound);

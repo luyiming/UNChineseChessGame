@@ -1,2 +1,8 @@
 build*
-
+Resource
+.DS_Store 
+UNChineseChessGame-Client-qt\src
+UNChineseChessGame-Client-vs2015
+UNChineseChessGame-Server-0.2.1\logs
+UNChineseChessGame-Server-0.2.1\record
+UNChineseChessGame-Server-0.2.1\result
