@@ -1,0 +1,24 @@
+2016-04-28 22:16:16  INFO CreatServiceRunnable:86 - CreatServiceRunnable initialization complete!
+2016-04-28 22:16:16  INFO CreatServiceRunnable:98 - CreatServiceRunnable is running...
+2016-04-28 22:16:16  INFO CreatServiceRunnable:107 - Start contest mode!
+2016-04-28 22:16:16  INFO CreatServiceRunnable:117 - The number of registered players: 0
+2016-04-28 23:08:55  INFO CreatServiceRunnable:185 - Accepted 111111111
+2016-04-28 23:08:55  INFO CreatServiceRunnable:201 - Welcome 111111111
+2016-04-28 23:08:55  INFO CreatServiceRunnable:117 - The number of registered players: 1
+2016-04-28 23:08:55  INFO CreatServiceRunnable:185 - Accepted 123456789
+2016-04-28 23:08:55  INFO CreatServiceRunnable:201 - Welcome 123456789
+2016-04-28 23:08:55  INFO CreatServiceRunnable:258 - The number of registered players: 2
+2016-04-28 23:08:55  INFO CreatServiceRunnable:262 - No passed player in contest
+2016-04-28 23:08:55  INFO CreatServiceRunnable:264 - Contest start!
+2016-04-28 23:11:19  INFO CreatServiceRunnable:86 - CreatServiceRunnable initialization complete!
+2016-04-28 23:11:19  INFO CreatServiceRunnable:98 - CreatServiceRunnable is running...
+2016-04-28 23:11:19  INFO CreatServiceRunnable:107 - Start contest mode!
+2016-04-28 23:11:19  INFO CreatServiceRunnable:117 - The number of registered players: 0
+2016-04-28 23:12:03  INFO CreatServiceRunnable:185 - Accepted 123456789
+2016-04-28 23:12:03  INFO CreatServiceRunnable:201 - Welcome 123456789
+2016-04-28 23:12:03  INFO CreatServiceRunnable:117 - The number of registered players: 1
+2016-04-28 23:12:03  INFO CreatServiceRunnable:185 - Accepted 111111111
+2016-04-28 23:12:03  INFO CreatServiceRunnable:201 - Welcome 111111111
+2016-04-28 23:12:03  INFO CreatServiceRunnable:258 - The number of registered players: 2
+2016-04-28 23:12:03  INFO CreatServiceRunnable:262 - No passed player in contest
+2016-04-28 23:12:03  INFO CreatServiceRunnable:264 - Contest start!

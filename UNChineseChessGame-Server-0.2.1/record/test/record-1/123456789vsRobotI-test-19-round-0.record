@@ -1,0 +1,27 @@
+TEST 19
+INFO 123456789 VS RobotI
+ROUND_START 0
+COLOR RED:P0 BLACK:P1
+INITIAL CHESS BOARD
+-------------------
+NIB5 NIR1 NIR6 NIB3 
+NIB0 NIB1 NIR0 NIR4 
+NIB2 NIR0 NIR3 NIB6 
+NIB4 NIR5 NIR2 NIB0 
+-------------------
+VALID_STEP RED SR1313
+-------------------
+|##| |##| |##| |##| 
+|##| |##| |##| |R4| 
+|##| |##| |##| |##| 
+|##| |##| |##| |##| 
+-------------------
+VALID_STEP BLACK SR0000
+-------------------
+|B5| |##| |##| |##| 
+|##| |##| |##| |R4| 
+|##| |##| |##| |##| 
+|##| |##| |##| |##| 
+-------------------
+UNKOWN_EXCEPTION RED
+ROUND_END 0

@@ -1,6 +1,7 @@
 #ifndef SQUARE_H
 #define SQUARE_H
 
+#include <QList>
 
 #define ROWS 4
 #define COLS 4
@@ -49,6 +50,13 @@ public:
     Board& operator = (const Board& rhs);
 };
 
-
+struct Record
+{
+    int ownColor;
+    int ownScore = -1, oppositeScore = -1;
+    QList<Board> boards;
+    Record() = default;
+    Record(int ownColor) : ownColor(ownColor){}
+};
 
 #endif // MAINWINDOW_H

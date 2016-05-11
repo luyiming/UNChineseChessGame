@@ -6,12 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>750</width>
-    <height>442</height>
+    <width>1056</width>
+    <height>565</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>象棋暗棋</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLabel" name="label_3">
@@ -43,17 +46,20 @@
    <widget class="QTextEdit" name="statusText">
     <property name="geometry">
      <rect>
-      <x>470</x>
+      <x>650</x>
       <y>240</y>
       <width>261</width>
-      <height>171</height>
+      <height>281</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(182, 164, 143, 125);</string>
     </property>
    </widget>
    <widget class="QWidget" name="formLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>470</x>
+      <x>650</x>
       <y>20</y>
       <width>261</width>
       <height>117</height>
@@ -98,27 +104,31 @@
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QLineEdit" name="pwdLine"/>
+      <widget class="QLineEdit" name="pwdLine">
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
    <widget class="QPushButton" name="connectButton">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>140</y>
+      <x>950</x>
+      <y>30</y>
       <width>81</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>连接</string>
+     <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="nextButton">
     <property name="geometry">
      <rect>
-      <x>650</x>
+      <x>830</x>
       <y>140</y>
       <width>81</width>
       <height>41</height>
@@ -131,7 +141,7 @@
    <widget class="QPushButton" name="quitButton">
     <property name="geometry">
      <rect>
-      <x>650</x>
+      <x>830</x>
       <y>190</y>
       <width>81</width>
       <height>41</height>
@@ -222,20 +232,20 @@
    <widget class="QPushButton" name="aiButton">
     <property name="geometry">
      <rect>
-      <x>560</x>
+      <x>740</x>
       <y>140</y>
       <width>81</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>AI</string>
+     <string>托管</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="connectButton_3">
+   <widget class="QPushButton" name="reviewButton">
     <property name="geometry">
      <rect>
-      <x>470</x>
+      <x>650</x>
       <y>190</y>
       <width>81</width>
       <height>41</height>
@@ -248,7 +258,7 @@
    <widget class="QPushButton" name="connectButton_4">
     <property name="geometry">
      <rect>
-      <x>560</x>
+      <x>740</x>
       <y>190</y>
       <width>81</width>
       <height>41</height>

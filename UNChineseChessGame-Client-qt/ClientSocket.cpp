@@ -83,8 +83,8 @@ int sendMsg(const char* msg)
 void close()
 {
 	// close socket    
-	closesocket(client);
+    closesocket(client);
 	// WSA clean
-	WSACleanup();
+    WSACleanup();
     qDebug() << "Close socket";
 }

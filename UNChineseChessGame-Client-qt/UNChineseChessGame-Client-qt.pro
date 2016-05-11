@@ -15,14 +15,22 @@ TEMPLATE = app
 SOURCES += main.cpp\
         MainWindow.cpp \
     ClientSocket.cpp \
-    Square.cpp
+    Square.cpp \
+    UNChineseChess.cpp \
+    ReviewDialog.cpp \
+    TitleBar.cpp
 
 HEADERS  += MainWindow.h \
     ClientSocket.h \
     Define.h \
-    Square.h
+    Square.h \
+    UNChineseChess.h \
+    ReviewDialog.h \
+    TitleBar.h
 
-FORMS    += MainWindow.ui
+FORMS    += MainWindow.ui \
+    ReviewDialog.ui \
+    TitleBar.ui
 
 RESOURCES += \
     src.qrc

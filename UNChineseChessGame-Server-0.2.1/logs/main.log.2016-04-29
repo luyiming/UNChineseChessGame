@@ -1,0 +1,34 @@
+2016-04-29 11:35:34  INFO ServerProperties:40 - Read server.properties complete! The properties as follows: 
+2016-04-29 11:35:34  INFO ServerProperties:42 - ui.result.list.width=33
+2016-04-29 11:35:34  INFO ServerProperties:42 - ui.width=620
+2016-04-29 11:35:34  INFO ServerProperties:42 - filter.out=0
+2016-04-29 11:35:34  INFO ServerProperties:42 - step.error.number=3
+2016-04-29 11:35:34  INFO ServerProperties:42 - server.port=10086
+2016-04-29 11:35:34  INFO ServerProperties:42 - chess.board.cols=4
+2016-04-29 11:35:34  INFO ServerProperties:42 - robot.model=1
+2016-04-29 11:35:34  INFO ServerProperties:42 - ui.height=710
+2016-04-29 11:35:34  INFO ServerProperties:42 - round.steps=50
+2016-04-29 11:35:34  INFO ServerProperties:42 - server.mode=0
+2016-04-29 11:35:34  INFO ServerProperties:42 - contest.rounds=3
+2016-04-29 11:35:34  INFO ServerProperties:42 - chess.board.rows=4
+2016-04-29 11:35:34  INFO ServerProperties:42 - step.timeout=10000
+2016-04-29 11:35:34  INFO Main:27 - Startup the main ui
+2016-04-29 11:35:34  INFO Players:66 - Load list file: players-0.list
+2016-04-29 11:35:34  INFO Players:72 - The players authoried in this round as follow:
+2016-04-29 11:35:34  INFO Players:80 - 123456789
+2016-04-29 11:35:34  INFO Players:80 - 111111111
+2016-04-29 11:35:34  INFO Players:84 - Total players: 2
+2016-04-29 11:35:34  INFO ClientConnectMonitor:60 - Creat server socket success!
+2016-04-29 11:35:34  INFO ClientConnectMonitor:62 - Server address is: 114.212.132.162:10086
+2016-04-29 11:35:34  INFO ClientConnectMonitor:64 - ClientConnectMonitor initialization complete!
+2016-04-29 11:35:34  INFO ClientConnectMonitor:74 - Start monitor...
+2016-04-29 11:35:34  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-04-29 11:39:02 ERROR ContestResults:213 - Save sucess!
+2016-04-29 11:39:07 ERROR Players:102 - The winners as follow:
+2016-04-29 11:39:07 ERROR Players:132 - Total winners: 0
+2016-04-29 11:39:07 ERROR Players:137 - The passed players as follow:
+2016-04-29 11:39:07 ERROR Players:140 - 123456789
+2016-04-29 11:39:07 ERROR Players:140 - 111111111
+2016-04-29 11:39:07 ERROR Players:144 - Total passed players: 2
+2016-04-29 11:39:07 ERROR Players:154 - Total promotion palyers: 2
+2016-04-29 11:39:07 ERROR Players:171 - Export promotion palyers sucess!

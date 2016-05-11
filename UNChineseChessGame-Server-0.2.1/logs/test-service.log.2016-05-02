@@ -1,0 +1,398 @@
+2016-05-02 17:18:27  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-0 begin!
+2016-05-02 17:18:27  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-0 round 0 start
+2016-05-02 17:18:58 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-02 17:18:58 ERROR TestServiceRunnable:165 - 123456789vsRobotI-test-0 ROUND 0 Unkown Exception when receive RED step!
+2016-05-02 17:18:58 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:18:58  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-0 round 0 end
+2016-05-02 17:18:58  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-0 round 1 start
+2016-05-02 17:18:58 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:18:58 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:18:58  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-0 round 1 end
+2016-05-02 17:18:58 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:18:58  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-0 game over
+2016-05-02 17:18:58  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-0 result save completed!
+2016-05-02 17:18:58  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-0 record save completed!
+2016-05-02 17:20:27  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-1 begin!
+2016-05-02 17:20:27  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-1 round 0 start
+2016-05-02 17:20:40 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-02 17:20:40 ERROR TestServiceRunnable:165 - 123456789vsRobotI-test-1 ROUND 0 Unkown Exception when receive RED step!
+2016-05-02 17:20:40 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:20:40  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-1 round 0 end
+2016-05-02 17:20:40  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-1 round 1 start
+2016-05-02 17:20:40 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:20:40 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:20:40  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-1 round 1 end
+2016-05-02 17:20:40 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:20:40  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-1 game over
+2016-05-02 17:20:40  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-1 result save completed!
+2016-05-02 17:20:41  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-1 record save completed!
+2016-05-02 17:21:35  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-2 begin!
+2016-05-02 17:21:35  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-2 round 0 start
+2016-05-02 17:21:39 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-02 17:21:39 ERROR TestServiceRunnable:165 - 123456789vsRobotI-test-2 ROUND 0 Unkown Exception when receive RED step!
+2016-05-02 17:21:39 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:21:39  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-2 round 0 end
+2016-05-02 17:21:39  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-2 round 1 start
+2016-05-02 17:21:39 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:21:39 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:21:39  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-2 round 1 end
+2016-05-02 17:21:39 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:21:39  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-2 game over
+2016-05-02 17:21:40  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-2 result save completed!
+2016-05-02 17:21:40  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-2 record save completed!
+2016-05-02 17:22:46  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-3 begin!
+2016-05-02 17:22:46  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-3 round 0 start
+2016-05-02 17:23:06 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-02 17:23:06 ERROR TestServiceRunnable:165 - 123456789vsRobotI-test-3 ROUND 0 Unkown Exception when receive RED step!
+2016-05-02 17:23:06 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:23:06  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-3 round 0 end
+2016-05-02 17:23:06  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-3 round 1 start
+2016-05-02 17:23:06 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:23:06 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:23:06  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-3 round 1 end
+2016-05-02 17:23:06 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:23:06  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-3 game over
+2016-05-02 17:23:06  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-3 result save completed!
+2016-05-02 17:23:06  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-3 record save completed!
+2016-05-02 17:23:14  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-4 begin!
+2016-05-02 17:23:14  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-4 round 0 start
+2016-05-02 17:23:25 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-02 17:23:25 ERROR TestServiceRunnable:165 - 123456789vsRobotI-test-4 ROUND 0 Unkown Exception when receive RED step!
+2016-05-02 17:23:25 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:23:25  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-4 round 0 end
+2016-05-02 17:23:25  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-4 round 1 start
+2016-05-02 17:23:25 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:23:25 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:23:25  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-4 round 1 end
+2016-05-02 17:23:25 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:23:25  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-4 game over
+2016-05-02 17:23:25  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-4 result save completed!
+2016-05-02 17:23:26  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-4 record save completed!
+2016-05-02 17:23:43  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-5 begin!
+2016-05-02 17:23:43  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-5 round 0 start
+2016-05-02 17:24:00 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:24:00 ERROR TestServiceRunnable:144 - 123456789vsRobotI-test-5 ROUND 0 TimeoutException when receive RED step: 1 time!
+2016-05-02 17:24:02 ERROR TestServiceRunnable:307 - java.net.SocketException: Connection reset
+2016-05-02 17:24:02 ERROR TestServiceRunnable:308 - 123456789vsRobotI-test-5 ROUND 0 Unkown Exception in 0 CONTEST
+2016-05-02 17:24:02 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:24:02  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-5 round 0 end
+2016-05-02 17:24:02  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-5 round 1 start
+2016-05-02 17:24:02 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:24:02 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:24:02  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-5 round 1 end
+2016-05-02 17:24:02 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:24:02  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-5 game over
+2016-05-02 17:24:02  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-5 result save completed!
+2016-05-02 17:24:02  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-5 record save completed!
+2016-05-02 17:25:18  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-6 begin!
+2016-05-02 17:25:18  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-6 round 0 start
+2016-05-02 17:25:33 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-02 17:25:33 ERROR TestServiceRunnable:165 - 123456789vsRobotI-test-6 ROUND 0 Unkown Exception when receive RED step!
+2016-05-02 17:25:33 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:25:33  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-6 round 0 end
+2016-05-02 17:25:33  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-6 round 1 start
+2016-05-02 17:25:33 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:25:33 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:25:33  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-6 round 1 end
+2016-05-02 17:25:33 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:25:33  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-6 game over
+2016-05-02 17:25:33  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-6 result save completed!
+2016-05-02 17:25:33  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-6 record save completed!
+2016-05-02 17:26:29  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-7 begin!
+2016-05-02 17:26:29  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-7 round 0 start
+2016-05-02 17:26:45 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:26:45 ERROR TestServiceRunnable:144 - 123456789vsRobotI-test-7 ROUND 0 TimeoutException when receive RED step: 1 time!
+2016-05-02 17:26:46 ERROR TestServiceRunnable:307 - java.net.SocketException: Connection reset
+2016-05-02 17:26:46 ERROR TestServiceRunnable:308 - 123456789vsRobotI-test-7 ROUND 0 Unkown Exception in 0 CONTEST
+2016-05-02 17:26:46 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:26:46  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-7 round 0 end
+2016-05-02 17:26:46  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-7 round 1 start
+2016-05-02 17:26:46 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:26:46 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:26:46  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-7 round 1 end
+2016-05-02 17:26:46 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:26:46  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-7 game over
+2016-05-02 17:26:46  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-7 result save completed!
+2016-05-02 17:26:46  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-7 record save completed!
+2016-05-02 17:27:09  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-8 begin!
+2016-05-02 17:27:09  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-8 round 0 start
+2016-05-02 17:27:20 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-02 17:27:20 ERROR TestServiceRunnable:165 - 123456789vsRobotI-test-8 ROUND 0 Unkown Exception when receive RED step!
+2016-05-02 17:27:20 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:27:20  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-8 round 0 end
+2016-05-02 17:27:20  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-8 round 1 start
+2016-05-02 17:27:20 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:27:20 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:27:20  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-8 round 1 end
+2016-05-02 17:27:20 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:27:20  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-8 game over
+2016-05-02 17:27:20  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-8 result save completed!
+2016-05-02 17:27:20  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-8 record save completed!
+2016-05-02 17:28:49  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-9 begin!
+2016-05-02 17:28:49  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-9 round 0 start
+2016-05-02 17:28:52 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-02 17:28:52 ERROR TestServiceRunnable:165 - 123456789vsRobotI-test-9 ROUND 0 Unkown Exception when receive RED step!
+2016-05-02 17:28:52 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:28:52  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-9 round 0 end
+2016-05-02 17:28:52  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-9 round 1 start
+2016-05-02 17:28:52 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:28:52 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:28:52  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-9 round 1 end
+2016-05-02 17:28:52 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:28:52  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-9 game over
+2016-05-02 17:28:52  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-9 result save completed!
+2016-05-02 17:28:52  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-9 record save completed!
+2016-05-02 17:29:26  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-10 begin!
+2016-05-02 17:29:26  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-10 round 0 start
+2016-05-02 17:29:31 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-02 17:29:31 ERROR TestServiceRunnable:165 - 123456789vsRobotI-test-10 ROUND 0 Unkown Exception when receive RED step!
+2016-05-02 17:29:31 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:29:31  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-10 round 0 end
+2016-05-02 17:29:31  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-10 round 1 start
+2016-05-02 17:29:31 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:29:31 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:29:31  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-10 round 1 end
+2016-05-02 17:29:31 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:29:31  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-10 game over
+2016-05-02 17:29:31  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-10 result save completed!
+2016-05-02 17:29:31  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-10 record save completed!
+2016-05-02 17:29:34  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-11 begin!
+2016-05-02 17:29:34  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-11 round 0 start
+2016-05-02 17:29:37 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-02 17:29:37 ERROR TestServiceRunnable:165 - 123456789vsRobotI-test-11 ROUND 0 Unkown Exception when receive RED step!
+2016-05-02 17:29:37 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:29:37  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-11 round 0 end
+2016-05-02 17:29:37  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-11 round 1 start
+2016-05-02 17:29:37 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:29:37 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:29:37  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-11 round 1 end
+2016-05-02 17:29:37 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:29:37  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-11 game over
+2016-05-02 17:29:37  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-11 result save completed!
+2016-05-02 17:29:37  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-11 record save completed!
+2016-05-02 17:29:39  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-12 begin!
+2016-05-02 17:29:39  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-12 round 0 start
+2016-05-02 17:29:41 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-02 17:29:41 ERROR TestServiceRunnable:165 - 123456789vsRobotI-test-12 ROUND 0 Unkown Exception when receive RED step!
+2016-05-02 17:29:41 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:29:41  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-12 round 0 end
+2016-05-02 17:29:41  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-12 round 1 start
+2016-05-02 17:29:41 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:29:41 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:29:41  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-12 round 1 end
+2016-05-02 17:29:41 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:29:41  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-12 game over
+2016-05-02 17:29:41  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-12 result save completed!
+2016-05-02 17:29:41  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-12 record save completed!
+2016-05-02 17:29:43  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-13 begin!
+2016-05-02 17:29:43  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-13 round 0 start
+2016-05-02 17:29:57 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:29:57 ERROR TestServiceRunnable:144 - 123456789vsRobotI-test-13 ROUND 0 TimeoutException when receive RED step: 1 time!
+2016-05-02 17:30:23 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:30:23 ERROR TestServiceRunnable:144 - 123456789vsRobotI-test-13 ROUND 0 TimeoutException when receive RED step: 3 time!
+2016-05-02 17:30:33 ERROR TestServiceRunnable:151 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:30:33 ERROR TestServiceRunnable:152 - 123456789vsRobotI-test-13 ROUND 0 TimeoutException when receive RED step: 4 time!
+2016-05-02 17:30:33  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-13 round 0 end
+2016-05-02 17:30:33  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-13 round 1 start
+2016-05-02 17:30:49 ERROR TestServiceRunnable:227 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:30:49 ERROR TestServiceRunnable:228 - 123456789vsRobotI-test-13 ROUND 1 TimeoutException when receive BLACK step: 1 time!
+2016-05-02 17:30:49 ERROR TestServiceRunnable:307 - java.net.SocketException: Connection reset
+2016-05-02 17:30:49 ERROR TestServiceRunnable:308 - 123456789vsRobotI-test-13 ROUND 1 Unkown Exception in 1 CONTEST
+2016-05-02 17:30:49 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:30:49  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-13 round 1 end
+2016-05-02 17:30:49  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-13 round 2 start
+2016-05-02 17:30:49 ERROR TestServiceRunnable:93 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:30:49 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:30:49  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-13 round 2 end
+2016-05-02 17:30:49 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 17:30:49  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-13 game over
+2016-05-02 17:30:49  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-13 result save completed!
+2016-05-02 17:30:49  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-13 record save completed!
+2016-05-02 17:31:19  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-14 begin!
+2016-05-02 17:31:19  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-14 round 0 start
+2016-05-02 17:31:38 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:31:38 ERROR TestServiceRunnable:144 - 123456789vsRobotI-test-14 ROUND 0 TimeoutException when receive RED step: 1 time!
+2016-05-02 17:31:57 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:31:57 ERROR TestServiceRunnable:144 - 123456789vsRobotI-test-14 ROUND 0 TimeoutException when receive RED step: 3 time!
+2016-05-02 17:32:12 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:32:12 ERROR TestServiceRunnable:144 - 123456789vsRobotI-test-14 ROUND 0 TimeoutException when receive RED step: 4 time!
+2016-05-02 17:32:12  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-14 round 0 end
+2016-05-02 17:32:12  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-14 round 1 start
+2016-05-02 17:32:54 ERROR TestServiceRunnable:227 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:32:54 ERROR TestServiceRunnable:228 - 123456789vsRobotI-test-14 ROUND 1 TimeoutException when receive BLACK step: 3 time!
+2016-05-02 17:33:09 ERROR TestServiceRunnable:227 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:33:09 ERROR TestServiceRunnable:228 - 123456789vsRobotI-test-14 ROUND 1 TimeoutException when receive BLACK step: 4 time!
+2016-05-02 17:33:09  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-14 round 1 end
+2016-05-02 17:33:09  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-14 round 2 start
+2016-05-02 17:33:21 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:33:21 ERROR TestServiceRunnable:144 - 123456789vsRobotI-test-14 ROUND 2 TimeoutException when receive RED step: 1 time!
+2016-05-02 17:33:36  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-14 round 2 end
+2016-05-02 17:33:36  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-14 game over
+2016-05-02 17:33:36  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-14 result save completed!
+2016-05-02 17:33:36  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-14 record save completed!
+2016-05-02 17:35:00  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-15 begin!
+2016-05-02 17:35:00  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-15 round 0 start
+2016-05-02 17:35:44 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:35:44 ERROR TestServiceRunnable:144 - 123456789vsRobotI-test-15 ROUND 0 TimeoutException when receive RED step: 1 time!
+2016-05-02 17:36:15 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:36:15 ERROR TestServiceRunnable:144 - 123456789vsRobotI-test-15 ROUND 0 TimeoutException when receive RED step: 2 time!
+2016-05-02 17:36:32 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:36:32 ERROR TestServiceRunnable:144 - 123456789vsRobotI-test-15 ROUND 0 TimeoutException when receive RED step: 3 time!
+2016-05-02 17:36:51 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:36:51 ERROR TestServiceRunnable:144 - 123456789vsRobotI-test-15 ROUND 0 TimeoutException when receive RED step: 4 time!
+2016-05-02 17:36:51  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-15 round 0 end
+2016-05-02 17:36:51  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-15 round 1 start
+2016-05-02 17:37:01 ERROR TestServiceRunnable:227 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:37:01 ERROR TestServiceRunnable:228 - 123456789vsRobotI-test-15 ROUND 1 TimeoutException when receive BLACK step: 1 time!
+2016-05-02 17:37:11 ERROR TestServiceRunnable:235 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:37:11 ERROR TestServiceRunnable:236 - 123456789vsRobotI-test-15 ROUND 1 TimeoutException when receive BLACK step: 2 time!
+2016-05-02 17:37:21 ERROR TestServiceRunnable:235 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:37:21 ERROR TestServiceRunnable:236 - 123456789vsRobotI-test-15 ROUND 1 TimeoutException when receive BLACK step: 3 time!
+2016-05-02 17:37:31 ERROR TestServiceRunnable:235 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:37:31 ERROR TestServiceRunnable:236 - 123456789vsRobotI-test-15 ROUND 1 TimeoutException when receive BLACK step: 4 time!
+2016-05-02 17:37:31  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-15 round 1 end
+2016-05-02 17:37:31  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-15 round 2 start
+2016-05-02 17:37:41 ERROR TestServiceRunnable:119 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:37:41 ERROR TestServiceRunnable:120 - 123456789vsRobotI-test-15 ROUND 2 TimeoutException when synchronize red round
+2016-05-02 17:37:41  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-15 round 2 end
+2016-05-02 17:37:41  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-15 game over
+2016-05-02 17:37:41  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-15 result save completed!
+2016-05-02 17:37:41  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-15 record save completed!
+2016-05-02 17:43:53  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-16 begin!
+2016-05-02 17:43:53  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-16 round 0 start
+2016-05-02 17:44:03 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:44:03 ERROR TestServiceRunnable:144 - 123456789vsRobotI-test-16 ROUND 0 TimeoutException when receive RED step: 1 time!
+2016-05-02 17:44:16 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:44:16 ERROR TestServiceRunnable:144 - 123456789vsRobotI-test-16 ROUND 0 TimeoutException when receive RED step: 2 time!
+2016-05-02 17:44:26 ERROR TestServiceRunnable:151 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:44:26 ERROR TestServiceRunnable:152 - 123456789vsRobotI-test-16 ROUND 0 TimeoutException when receive RED step: 3 time!
+2016-05-02 17:44:44 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:44:44 ERROR TestServiceRunnable:144 - 123456789vsRobotI-test-16 ROUND 0 TimeoutException when receive RED step: 4 time!
+2016-05-02 17:44:44  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-16 round 0 end
+2016-05-02 17:44:44  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-16 round 1 start
+2016-05-02 17:44:54 ERROR TestServiceRunnable:119 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 17:44:54 ERROR TestServiceRunnable:120 - 123456789vsRobotI-test-16 ROUND 1 TimeoutException when synchronize red round
+2016-05-02 17:44:54  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-16 round 1 end
+2016-05-02 17:44:54  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-16 game over
+2016-05-02 17:44:54  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-16 result save completed!
+2016-05-02 17:44:54  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-16 record save completed!
+2016-05-02 18:11:42  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-0 begin!
+2016-05-02 18:11:42  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-0 round 0 start
+2016-05-02 18:11:55 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-02 18:11:55 ERROR TestServiceRunnable:165 - 123456789vsRobotI-test-0 ROUND 0 Unkown Exception when receive RED step!
+2016-05-02 18:11:55 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 18:11:55  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-0 round 0 end
+2016-05-02 18:11:55  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-0 round 1 start
+2016-05-02 18:11:55 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 18:11:55 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 18:11:55  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-0 round 1 end
+2016-05-02 18:11:55 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 18:11:55  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-0 game over
+2016-05-02 18:11:55  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-0 result save completed!
+2016-05-02 18:11:55  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-0 record save completed!
+2016-05-02 18:12:30  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-1 begin!
+2016-05-02 18:12:30  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-1 round 0 start
+2016-05-02 18:12:47 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-02 18:12:47 ERROR TestServiceRunnable:165 - 123456789vsRobotI-test-1 ROUND 0 Unkown Exception when receive RED step!
+2016-05-02 18:12:47 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 18:12:47  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-1 round 0 end
+2016-05-02 18:12:47  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-1 round 1 start
+2016-05-02 18:12:47 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 18:12:47 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 18:12:47  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-1 round 1 end
+2016-05-02 18:12:47 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 18:12:47  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-1 game over
+2016-05-02 18:12:47  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-1 result save completed!
+2016-05-02 18:12:47  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-1 record save completed!
+2016-05-02 18:13:11  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-2 begin!
+2016-05-02 18:13:11  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-2 round 0 start
+2016-05-02 18:13:35 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 18:13:35 ERROR TestServiceRunnable:144 - 123456789vsRobotI-test-2 ROUND 0 TimeoutException when receive RED step: 1 time!
+2016-05-02 18:14:10 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-02 18:14:10 ERROR TestServiceRunnable:165 - 123456789vsRobotI-test-2 ROUND 0 Unkown Exception when receive RED step!
+2016-05-02 18:14:10 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 18:14:10  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-2 round 0 end
+2016-05-02 18:14:10  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-2 round 1 start
+2016-05-02 18:14:10 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 18:14:10 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 18:14:10  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-2 round 1 end
+2016-05-02 18:14:10 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 18:14:10  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-2 game over
+2016-05-02 18:14:10  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-2 result save completed!
+2016-05-02 18:14:10  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-2 record save completed!
+2016-05-02 18:14:21  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-3 begin!
+2016-05-02 18:14:21  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-3 round 0 start
+2016-05-02 18:15:18  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-3 round 0 end
+2016-05-02 18:15:18  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-3 round 1 start
+2016-05-02 18:15:35 ERROR TestServiceRunnable:227 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 18:15:35 ERROR TestServiceRunnable:228 - 123456789vsRobotI-test-3 ROUND 1 TimeoutException when receive BLACK step: 1 time!
+2016-05-02 18:15:35 ERROR TestServiceRunnable:307 - java.net.SocketException: Connection reset
+2016-05-02 18:15:35 ERROR TestServiceRunnable:308 - 123456789vsRobotI-test-3 ROUND 1 Unkown Exception in 1 CONTEST
+2016-05-02 18:15:35 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 18:15:35  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-3 round 1 end
+2016-05-02 18:15:35  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-3 round 2 start
+2016-05-02 18:15:35 ERROR TestServiceRunnable:93 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 18:15:35 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 18:15:35  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-3 round 2 end
+2016-05-02 18:15:35 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 18:15:35  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-3 game over
+2016-05-02 18:15:35  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-3 result save completed!
+2016-05-02 18:15:35  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-3 record save completed!
+2016-05-02 21:26:40  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-0 begin!
+2016-05-02 21:26:40  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-0 round 0 start
+2016-05-02 21:59:20  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-0 begin!
+2016-05-02 21:59:20  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-0 round 0 start
+2016-05-02 21:59:26 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-02 21:59:26 ERROR TestServiceRunnable:165 - 123456789vsRobotI-test-0 ROUND 0 Unkown Exception when receive RED step!
+2016-05-02 21:59:26 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 21:59:26  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-0 round 0 end
+2016-05-02 21:59:26  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-0 round 1 start
+2016-05-02 21:59:26 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 21:59:26 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 21:59:26  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-0 round 1 end
+2016-05-02 21:59:26 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 21:59:26  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-0 game over
+2016-05-02 21:59:26  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-0 result save completed!
+2016-05-02 21:59:26  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-0 record save completed!
+2016-05-02 22:01:25  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-1 begin!
+2016-05-02 22:01:25  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-1 round 0 start
+2016-05-02 22:01:32 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-02 22:01:32 ERROR TestServiceRunnable:165 - 123456789vsRobotI-test-1 ROUND 0 Unkown Exception when receive RED step!
+2016-05-02 22:01:32 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 22:01:32  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-1 round 0 end
+2016-05-02 22:01:32  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-1 round 1 start
+2016-05-02 22:01:32 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 22:01:32 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 22:01:32  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-1 round 1 end
+2016-05-02 22:01:32 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 22:01:32  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-1 game over
+2016-05-02 22:01:32  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-1 result save completed!
+2016-05-02 22:01:32  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-1 record save completed!
+2016-05-02 22:01:44  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-2 begin!
+2016-05-02 22:01:44  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-2 round 0 start
+2016-05-02 22:01:48 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-02 22:01:48 ERROR TestServiceRunnable:165 - 123456789vsRobotI-test-2 ROUND 0 Unkown Exception when receive RED step!
+2016-05-02 22:01:48 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 22:01:48  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-2 round 0 end
+2016-05-02 22:01:48  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-2 round 1 start
+2016-05-02 22:01:48 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 22:01:48 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 22:01:48  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-2 round 1 end
+2016-05-02 22:01:48 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-02 22:01:48  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-2 game over
+2016-05-02 22:01:48  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-2 result save completed!
+2016-05-02 22:01:48  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-2 record save completed!
+2016-05-02 22:02:40  INFO TestServiceRunnable:59 - 123456789vsRobotI-test-3 begin!
+2016-05-02 22:02:40  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-3 round 0 start
+2016-05-02 22:03:11 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 22:03:11 ERROR TestServiceRunnable:144 - 123456789vsRobotI-test-3 ROUND 0 TimeoutException when receive RED step: 3 time!
+2016-05-02 22:03:21 ERROR TestServiceRunnable:151 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 22:03:21 ERROR TestServiceRunnable:152 - 123456789vsRobotI-test-3 ROUND 0 TimeoutException when receive RED step: 4 time!
+2016-05-02 22:03:21  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-3 round 0 end
+2016-05-02 22:03:21  INFO TestServiceRunnable:69 - 123456789vsRobotI-test-3 round 1 start
+2016-05-02 22:03:31 ERROR TestServiceRunnable:119 - java.net.SocketTimeoutException: Read timed out
+2016-05-02 22:03:31 ERROR TestServiceRunnable:120 - 123456789vsRobotI-test-3 ROUND 1 TimeoutException when synchronize red round
+2016-05-02 22:03:31  INFO TestServiceRunnable:318 - 123456789vsRobotI-test-3 round 1 end
+2016-05-02 22:03:31  INFO TestServiceRunnable:342 - 123456789vsRobotI-test-3 game over
+2016-05-02 22:03:31  INFO TestServiceRunnable:349 - 123456789vsRobotI-test-3 result save completed!
+2016-05-02 22:03:31  INFO TestServiceRunnable:354 - 123456789vsRobotI-test-3 record save completed!

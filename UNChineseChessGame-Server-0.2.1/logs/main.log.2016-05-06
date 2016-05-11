@@ -1,0 +1,226 @@
+2016-05-06 09:50:07  INFO ServerProperties:40 - Read server.properties complete! The properties as follows: 
+2016-05-06 09:50:07  INFO ServerProperties:42 - ui.result.list.width=33
+2016-05-06 09:50:07  INFO ServerProperties:42 - ui.width=620
+2016-05-06 09:50:07  INFO ServerProperties:42 - filter.out=0
+2016-05-06 09:50:07  INFO ServerProperties:42 - step.error.number=3
+2016-05-06 09:50:07  INFO ServerProperties:42 - server.port=10086
+2016-05-06 09:50:07  INFO ServerProperties:42 - chess.board.cols=4
+2016-05-06 09:50:07  INFO ServerProperties:42 - robot.model=1
+2016-05-06 09:50:07  INFO ServerProperties:42 - ui.height=710
+2016-05-06 09:50:07  INFO ServerProperties:42 - round.steps=50
+2016-05-06 09:50:07  INFO ServerProperties:42 - server.mode=1
+2016-05-06 09:50:07  INFO ServerProperties:42 - contest.rounds=3
+2016-05-06 09:50:07  INFO ServerProperties:42 - chess.board.rows=4
+2016-05-06 09:50:07  INFO ServerProperties:42 - step.timeout=10000
+2016-05-06 09:50:07  INFO Main:27 - Startup the main ui
+2016-05-06 09:50:08  INFO Players:66 - Load list file: players-1.list
+2016-05-06 09:50:08  INFO Players:72 - The players authoried in this round as follow:
+2016-05-06 09:50:08  INFO Players:80 - 111111111
+2016-05-06 09:50:08  INFO Players:80 - 123456789
+2016-05-06 09:50:08  INFO Players:84 - Total players: 2
+2016-05-06 09:50:08  INFO ClientConnectMonitor:60 - Creat server socket success!
+2016-05-06 09:50:08  INFO ClientConnectMonitor:62 - Server address is: 172.26.4.173:10086
+2016-05-06 09:50:08  INFO ClientConnectMonitor:64 - ClientConnectMonitor initialization complete!
+2016-05-06 09:50:08  INFO ClientConnectMonitor:74 - Start monitor...
+2016-05-06 09:50:08  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 09:50:15  INFO ClientConnectMonitor:100 - Accepted one accession: 172.26.4.173:13699
+2016-05-06 09:50:15  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 09:50:15  INFO RobotAIFactory:15 - Produce one Robot I
+2016-05-06 09:50:20  INFO ClientConnectMonitor:100 - Accepted one accession: 172.26.4.173:13701
+2016-05-06 09:50:20  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 09:50:20  INFO RobotAIFactory:15 - Produce one Robot I
+2016-05-06 09:51:37  INFO ServerProperties:40 - Read server.properties complete! The properties as follows: 
+2016-05-06 09:51:37  INFO ServerProperties:42 - ui.result.list.width=33
+2016-05-06 09:51:37  INFO ServerProperties:42 - ui.width=620
+2016-05-06 09:51:37  INFO ServerProperties:42 - filter.out=0
+2016-05-06 09:51:37  INFO ServerProperties:42 - step.error.number=3
+2016-05-06 09:51:37  INFO ServerProperties:42 - server.port=10086
+2016-05-06 09:51:37  INFO ServerProperties:42 - chess.board.cols=4
+2016-05-06 09:51:37  INFO ServerProperties:42 - robot.model=1
+2016-05-06 09:51:37  INFO ServerProperties:42 - ui.height=710
+2016-05-06 09:51:37  INFO ServerProperties:42 - round.steps=50
+2016-05-06 09:51:37  INFO ServerProperties:42 - server.mode=1
+2016-05-06 09:51:37  INFO ServerProperties:42 - contest.rounds=3
+2016-05-06 09:51:37  INFO ServerProperties:42 - chess.board.rows=4
+2016-05-06 09:51:37  INFO ServerProperties:42 - step.timeout=10000
+2016-05-06 09:51:37  INFO Main:27 - Startup the main ui
+2016-05-06 09:51:38  INFO Players:66 - Load list file: players-1.list
+2016-05-06 09:51:38  INFO Players:72 - The players authoried in this round as follow:
+2016-05-06 09:51:38  INFO Players:80 - 111111111
+2016-05-06 09:51:38  INFO Players:80 - 123456789
+2016-05-06 09:51:38  INFO Players:84 - Total players: 2
+2016-05-06 09:51:38  INFO ClientConnectMonitor:60 - Creat server socket success!
+2016-05-06 09:51:38  INFO ClientConnectMonitor:62 - Server address is: 172.26.4.173:10086
+2016-05-06 09:51:38  INFO ClientConnectMonitor:64 - ClientConnectMonitor initialization complete!
+2016-05-06 09:51:38  INFO ClientConnectMonitor:74 - Start monitor...
+2016-05-06 09:51:38  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 09:51:39  INFO ClientConnectMonitor:100 - Accepted one accession: 172.26.4.173:13731
+2016-05-06 09:51:39  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 09:51:39  INFO RobotAIFactory:15 - Produce one Robot I
+2016-05-06 10:16:16  INFO ServerProperties:40 - Read server.properties complete! The properties as follows: 
+2016-05-06 10:16:16  INFO ServerProperties:42 - ui.result.list.width=33
+2016-05-06 10:16:16  INFO ServerProperties:42 - ui.width=620
+2016-05-06 10:16:16  INFO ServerProperties:42 - filter.out=0
+2016-05-06 10:16:16  INFO ServerProperties:42 - step.error.number=3
+2016-05-06 10:16:16  INFO ServerProperties:42 - server.port=10086
+2016-05-06 10:16:16  INFO ServerProperties:42 - chess.board.cols=4
+2016-05-06 10:16:16  INFO ServerProperties:42 - robot.model=1
+2016-05-06 10:16:16  INFO ServerProperties:42 - ui.height=710
+2016-05-06 10:16:16  INFO ServerProperties:42 - round.steps=50
+2016-05-06 10:16:16  INFO ServerProperties:42 - server.mode=1
+2016-05-06 10:16:16  INFO ServerProperties:42 - contest.rounds=3
+2016-05-06 10:16:16  INFO ServerProperties:42 - chess.board.rows=4
+2016-05-06 10:16:16  INFO ServerProperties:42 - step.timeout=10000
+2016-05-06 10:16:16  INFO Main:27 - Startup the main ui
+2016-05-06 10:16:17  INFO Players:66 - Load list file: players-1.list
+2016-05-06 10:16:17  INFO Players:72 - The players authoried in this round as follow:
+2016-05-06 10:16:17  INFO Players:80 - 111111111
+2016-05-06 10:16:17  INFO Players:80 - 123456789
+2016-05-06 10:16:17  INFO Players:84 - Total players: 2
+2016-05-06 10:16:17  INFO ClientConnectMonitor:60 - Creat server socket success!
+2016-05-06 10:16:17  INFO ClientConnectMonitor:62 - Server address is: 192.168.202.1:10086
+2016-05-06 10:16:17  INFO ClientConnectMonitor:64 - ClientConnectMonitor initialization complete!
+2016-05-06 10:16:17  INFO ClientConnectMonitor:74 - Start monitor...
+2016-05-06 10:16:17  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 10:16:29  INFO ClientConnectMonitor:100 - Accepted one accession: 172.26.4.173:1038
+2016-05-06 10:16:29  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 10:16:29  INFO RobotAIFactory:15 - Produce one Robot I
+2016-05-06 10:20:09  INFO ClientConnectMonitor:100 - Accepted one accession: 172.26.4.173:1799
+2016-05-06 10:20:09  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 10:20:09  INFO RobotAIFactory:15 - Produce one Robot I
+2016-05-06 10:25:41  INFO ClientConnectMonitor:100 - Accepted one accession: 172.26.4.173:1990
+2016-05-06 10:25:41  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 10:25:41  INFO RobotAIFactory:15 - Produce one Robot I
+2016-05-06 10:31:36  INFO ServerProperties:40 - Read server.properties complete! The properties as follows: 
+2016-05-06 10:31:36  INFO ServerProperties:42 - ui.result.list.width=33
+2016-05-06 10:31:36  INFO ServerProperties:42 - ui.width=620
+2016-05-06 10:31:36  INFO ServerProperties:42 - filter.out=0
+2016-05-06 10:31:36  INFO ServerProperties:42 - step.error.number=3
+2016-05-06 10:31:36  INFO ServerProperties:42 - server.port=10086
+2016-05-06 10:31:36  INFO ServerProperties:42 - chess.board.cols=4
+2016-05-06 10:31:36  INFO ServerProperties:42 - robot.model=1
+2016-05-06 10:31:36  INFO ServerProperties:42 - ui.height=710
+2016-05-06 10:31:36  INFO ServerProperties:42 - round.steps=50
+2016-05-06 10:31:36  INFO ServerProperties:42 - server.mode=1
+2016-05-06 10:31:36  INFO ServerProperties:42 - contest.rounds=3
+2016-05-06 10:31:36  INFO ServerProperties:42 - chess.board.rows=4
+2016-05-06 10:31:36  INFO ServerProperties:42 - step.timeout=10000
+2016-05-06 10:31:36  INFO Main:27 - Startup the main ui
+2016-05-06 10:31:37  INFO Players:66 - Load list file: players-1.list
+2016-05-06 10:31:37  INFO Players:72 - The players authoried in this round as follow:
+2016-05-06 10:31:37  INFO Players:80 - 111111111
+2016-05-06 10:31:37  INFO Players:80 - 123456789
+2016-05-06 10:31:37  INFO Players:84 - Total players: 2
+2016-05-06 10:31:37  INFO ClientConnectMonitor:60 - Creat server socket success!
+2016-05-06 10:31:37  INFO ClientConnectMonitor:62 - Server address is: 192.168.202.1:10086
+2016-05-06 10:31:37  INFO ClientConnectMonitor:64 - ClientConnectMonitor initialization complete!
+2016-05-06 10:31:37  INFO ClientConnectMonitor:74 - Start monitor...
+2016-05-06 10:31:37  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 10:31:39  INFO ClientConnectMonitor:100 - Accepted one accession: 172.26.4.173:2033
+2016-05-06 10:31:39  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 10:31:39  INFO RobotAIFactory:15 - Produce one Robot I
+2016-05-06 10:42:03  INFO ServerProperties:40 - Read server.properties complete! The properties as follows: 
+2016-05-06 10:42:03  INFO ServerProperties:42 - ui.result.list.width=33
+2016-05-06 10:42:03  INFO ServerProperties:42 - ui.width=620
+2016-05-06 10:42:03  INFO ServerProperties:42 - filter.out=0
+2016-05-06 10:42:03  INFO ServerProperties:42 - step.error.number=3
+2016-05-06 10:42:03  INFO ServerProperties:42 - server.port=10086
+2016-05-06 10:42:03  INFO ServerProperties:42 - chess.board.cols=4
+2016-05-06 10:42:03  INFO ServerProperties:42 - robot.model=1
+2016-05-06 10:42:03  INFO ServerProperties:42 - ui.height=710
+2016-05-06 10:42:03  INFO ServerProperties:42 - round.steps=50
+2016-05-06 10:42:03  INFO ServerProperties:42 - server.mode=1
+2016-05-06 10:42:03  INFO ServerProperties:42 - contest.rounds=3
+2016-05-06 10:42:03  INFO ServerProperties:42 - chess.board.rows=4
+2016-05-06 10:42:03  INFO ServerProperties:42 - step.timeout=10000
+2016-05-06 10:42:03  INFO Main:27 - Startup the main ui
+2016-05-06 10:42:05  INFO Players:66 - Load list file: players-1.list
+2016-05-06 10:42:05  INFO Players:72 - The players authoried in this round as follow:
+2016-05-06 10:42:05  INFO Players:80 - 111111111
+2016-05-06 10:42:05  INFO Players:80 - 123456789
+2016-05-06 10:42:05  INFO Players:84 - Total players: 2
+2016-05-06 10:42:05  INFO ClientConnectMonitor:60 - Creat server socket success!
+2016-05-06 10:42:05  INFO ClientConnectMonitor:62 - Server address is: 192.168.202.1:10086
+2016-05-06 10:42:05  INFO ClientConnectMonitor:64 - ClientConnectMonitor initialization complete!
+2016-05-06 10:42:05  INFO ClientConnectMonitor:74 - Start monitor...
+2016-05-06 10:42:05  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 10:42:13  INFO ClientConnectMonitor:100 - Accepted one accession: 172.26.4.173:2542
+2016-05-06 10:42:13  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 10:42:13  INFO RobotAIFactory:15 - Produce one Robot I
+2016-05-06 10:45:59  INFO ClientConnectMonitor:100 - Accepted one accession: 172.26.4.173:2597
+2016-05-06 10:45:59  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 10:45:59  INFO RobotAIFactory:15 - Produce one Robot I
+2016-05-06 10:47:24  INFO ClientConnectMonitor:100 - Accepted one accession: 172.26.4.173:2622
+2016-05-06 10:47:24  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 10:47:24  INFO RobotAIFactory:15 - Produce one Robot I
+2016-05-06 10:48:15  INFO ClientConnectMonitor:100 - Accepted one accession: 172.26.4.173:2623
+2016-05-06 10:48:15  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 10:48:15  INFO RobotAIFactory:15 - Produce one Robot I
+2016-05-06 10:49:52  INFO ClientConnectMonitor:100 - Accepted one accession: 172.26.4.173:2625
+2016-05-06 10:49:52  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 10:49:52  INFO RobotAIFactory:15 - Produce one Robot I
+2016-05-06 11:11:13  INFO ClientConnectMonitor:100 - Accepted one accession: 172.26.4.173:3525
+2016-05-06 11:11:13  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 11:11:13  INFO RobotAIFactory:15 - Produce one Robot I
+2016-05-06 11:11:29  INFO ServerProperties:40 - Read server.properties complete! The properties as follows: 
+2016-05-06 11:11:29  INFO ServerProperties:42 - ui.result.list.width=33
+2016-05-06 11:11:29  INFO ServerProperties:42 - ui.width=620
+2016-05-06 11:11:29  INFO ServerProperties:42 - filter.out=0
+2016-05-06 11:11:29  INFO ServerProperties:42 - step.error.number=3
+2016-05-06 11:11:29  INFO ServerProperties:42 - server.port=10086
+2016-05-06 11:11:29  INFO ServerProperties:42 - chess.board.cols=4
+2016-05-06 11:11:29  INFO ServerProperties:42 - robot.model=1
+2016-05-06 11:11:29  INFO ServerProperties:42 - ui.height=710
+2016-05-06 11:11:29  INFO ServerProperties:42 - round.steps=50
+2016-05-06 11:11:29  INFO ServerProperties:42 - server.mode=1
+2016-05-06 11:11:29  INFO ServerProperties:42 - contest.rounds=3
+2016-05-06 11:11:29  INFO ServerProperties:42 - chess.board.rows=4
+2016-05-06 11:11:29  INFO ServerProperties:42 - step.timeout=10000
+2016-05-06 11:11:29  INFO Main:27 - Startup the main ui
+2016-05-06 11:11:30  INFO Players:66 - Load list file: players-1.list
+2016-05-06 11:11:30  INFO Players:72 - The players authoried in this round as follow:
+2016-05-06 11:11:30  INFO Players:80 - 111111111
+2016-05-06 11:11:30  INFO Players:80 - 123456789
+2016-05-06 11:11:30  INFO Players:84 - Total players: 2
+2016-05-06 11:11:30  INFO ClientConnectMonitor:60 - Creat server socket success!
+2016-05-06 11:11:30  INFO ClientConnectMonitor:62 - Server address is: 192.168.202.1:10086
+2016-05-06 11:11:30  INFO ClientConnectMonitor:64 - ClientConnectMonitor initialization complete!
+2016-05-06 11:11:30  INFO ClientConnectMonitor:74 - Start monitor...
+2016-05-06 11:11:30  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 11:11:32  INFO ClientConnectMonitor:100 - Accepted one accession: 172.26.4.173:3526
+2016-05-06 11:11:32  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 11:11:32  INFO RobotAIFactory:15 - Produce one Robot I
+2016-05-06 11:38:06  INFO ServerProperties:40 - Read server.properties complete! The properties as follows: 
+2016-05-06 11:38:06  INFO ServerProperties:42 - ui.result.list.width=33
+2016-05-06 11:38:06  INFO ServerProperties:42 - ui.width=620
+2016-05-06 11:38:06  INFO ServerProperties:42 - filter.out=0
+2016-05-06 11:38:06  INFO ServerProperties:42 - step.error.number=3
+2016-05-06 11:38:06  INFO ServerProperties:42 - server.port=10086
+2016-05-06 11:38:06  INFO ServerProperties:42 - chess.board.cols=4
+2016-05-06 11:38:06  INFO ServerProperties:42 - robot.model=1
+2016-05-06 11:38:06  INFO ServerProperties:42 - ui.height=710
+2016-05-06 11:38:06  INFO ServerProperties:42 - round.steps=50
+2016-05-06 11:38:06  INFO ServerProperties:42 - server.mode=1
+2016-05-06 11:38:06  INFO ServerProperties:42 - contest.rounds=3
+2016-05-06 11:38:06  INFO ServerProperties:42 - chess.board.rows=4
+2016-05-06 11:38:06  INFO ServerProperties:42 - step.timeout=10000
+2016-05-06 11:38:06  INFO Main:27 - Startup the main ui
+2016-05-06 11:38:06  INFO Players:66 - Load list file: players-1.list
+2016-05-06 11:38:06  INFO Players:72 - The players authoried in this round as follow:
+2016-05-06 11:38:06  INFO Players:80 - 111111111
+2016-05-06 11:38:06  INFO Players:80 - 123456789
+2016-05-06 11:38:06  INFO Players:84 - Total players: 2
+2016-05-06 11:38:06  INFO ClientConnectMonitor:60 - Creat server socket success!
+2016-05-06 11:38:06  INFO ClientConnectMonitor:62 - Server address is: 192.168.202.1:10086
+2016-05-06 11:38:06  INFO ClientConnectMonitor:64 - ClientConnectMonitor initialization complete!
+2016-05-06 11:38:06  INFO ClientConnectMonitor:74 - Start monitor...
+2016-05-06 11:38:06  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 11:44:12  INFO ClientConnectMonitor:100 - Accepted one accession: 172.26.4.173:5300
+2016-05-06 11:44:12  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 11:44:12  INFO RobotAIFactory:15 - Produce one Robot I
+2016-05-06 11:48:08  INFO ClientConnectMonitor:100 - Accepted one accession: 172.26.4.173:5562
+2016-05-06 11:48:08  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 11:48:08  INFO RobotAIFactory:15 - Produce one Robot I
+2016-05-06 11:51:21  INFO ClientConnectMonitor:100 - Accepted one accession: 172.26.4.173:5564
+2016-05-06 11:51:21  INFO ClientConnectMonitor:82 - Waitting clients to access...
+2016-05-06 11:51:21  INFO RobotAIFactory:15 - Produce one Robot I

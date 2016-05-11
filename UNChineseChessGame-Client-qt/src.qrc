@@ -1,19 +1,29 @@
 <RCC>
-    <qresource prefix="/new/prefix1">
-        <file>src/back.png</file>
-        <file>src/b-0.png</file>
-        <file>src/b-1.png</file>
-        <file>src/b-2.png</file>
-        <file>src/b-3.png</file>
-        <file>src/b-4.png</file>
-        <file>src/b-5.png</file>
-        <file>src/b-6.png</file>
-        <file>src/r-0.png</file>
-        <file>src/r-1.png</file>
-        <file>src/r-2.png</file>
-        <file>src/r-3.png</file>
-        <file>src/r-4.png</file>
-        <file>src/r-5.png</file>
-        <file>src/r-6.png</file>
+    <qresource prefix="/">
+        <file>src/chess/b-0.png</file>
+        <file>src/chess/b-1.png</file>
+        <file>src/chess/b-2.png</file>
+        <file>src/chess/b-3.png</file>
+        <file>src/chess/b-4.png</file>
+        <file>src/chess/b-5.png</file>
+        <file>src/chess/b-6.png</file>
+        <file>src/chess/back.png</file>
+        <file>src/chess/half-board.png</file>
+        <file>src/chess/r-0.png</file>
+        <file>src/chess/r-1.png</file>
+        <file>src/chess/r-2.png</file>
+        <file>src/chess/r-3.png</file>
+        <file>src/chess/r-4.png</file>
+        <file>src/chess/r-5.png</file>
+        <file>src/chess/r-6.png</file>
+        <file>src/button/connect-hover.png</file>
+        <file>src/button/connect-normal.png</file>
+        <file>src/button/connect-pressed.png</file>
+        <file alias="background">src/background02.jpg</file>
+        <file>src/button/button-hover.png</file>
+        <file>src/button/button-normal.png</file>
+        <file>src/button/button-pressed.png</file>
+        <file>src/background03.png</file>
+        <file>src/chess/selected.png</file>
     </qresource>
 </RCC>

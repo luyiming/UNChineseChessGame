@@ -4,6 +4,11 @@
 #include "Define.h"
 #include "Square.h"
 #include "ClientSocket.h"
+#include "UNChineseChess.h"
+#include "TitleBar.h"
+#include "ui_TitleBar.h"
+#include "ReviewDialog.h"
+#include "ui_ReviewDialog.h"
 
 #include <QMainWindow>
 #include <QPainter>
@@ -11,10 +16,7 @@
 #include <QTimer>
 #include <QStack>
 #include <QList>
-
-#define ROWS 4
-#define COLS 4
-#define ROUNDS 3
+#include <QString>
 
 
 namespace Ui {
@@ -36,42 +38,28 @@ protected:
 private slots:
     void on_connectButton_clicked();
 
-
     void on_quitButton_clicked();
     void on_aiButton_clicked();
 
-signals:
-    void test();
+    void on_nextButton_clicked();
+
+    void on_reviewButton_clicked();
+
+public slots:
+    void addInfo(QString s);
+
 private:
     Ui::MainWindow *ui;
-    int srcRow, srcCol, desRow, desCol;
-    int curRound = 0;
-    int ownColor = -1, oppositeColor = -1;
-    bool isSelected = false;
-    Board board;
-    QStack<Board> boards;
+
     QTimer *countDownTimer;
 
-    void authorize(const char *id, const char* password);
-    void gameOver();
-    void roundStart(int round);
-    void roundOver(int round);
-    int observe();
-    void reversePiece(int row, int col);
-    void movePiece(int srcRow, int srcCol, int desRow, int desCol);
-    void noStep();
-    void step();
-    void oneRound();
-    void saveChessBoard();
+    Game *game = new Game;
 
-    void addInfo(QString s);
+    int hr, hc;
+    bool selected = false;
 
     void countDown(bool restart);
 
-    int alphaBetaMax(Board& b, int depth, int alpha, int beta);
-    int alphaBetaMin(Board& b, int depth, int alpha, int beta);
-    void makeMoves(Board& b, int color, QList<Board>& moves);
-    int evaluate(Board& b);
 };
 
 #endif // MAINWINDOW_H
