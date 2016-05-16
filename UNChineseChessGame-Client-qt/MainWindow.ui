@@ -106,7 +106,7 @@
      <item row="3" column="1">
       <widget class="QLineEdit" name="pwdLine">
        <property name="echoMode">
-        <enum>QLineEdit::Password</enum>
+        <enum>QLineEdit::Normal</enum>
        </property>
       </widget>
      </item>
@@ -115,14 +115,14 @@
    <widget class="QPushButton" name="connectButton">
     <property name="geometry">
      <rect>
-      <x>950</x>
-      <y>30</y>
+      <x>650</x>
+      <y>140</y>
       <width>81</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>连接</string>
     </property>
    </widget>
    <widget class="QPushButton" name="nextButton">
@@ -135,7 +135,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>待定</string>
+     <string>下一步</string>
     </property>
    </widget>
    <widget class="QPushButton" name="quitButton">
@@ -239,7 +239,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>托管</string>
+     <string>AI</string>
     </property>
    </widget>
    <widget class="QPushButton" name="reviewButton">
@@ -255,7 +255,7 @@
      <string>复盘</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="connectButton_4">
+   <widget class="QPushButton" name="configButton">
     <property name="geometry">
      <rect>
       <x>740</x>

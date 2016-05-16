@@ -20,7 +20,6 @@ signals:
 public:
 
     int curRound = 0;
-    int curContest = 0;
     bool saveToFile = false;
     int ownColor = -1, oppositeColor = -1;
     bool isSelected = false;
@@ -40,7 +39,7 @@ public:
     void noStep();
     void step();
 
-    int review(int round, int num);
+    void setBoard(Board &board);
     int tryMove(int r, int c);
     void saveChessBoard();
     int alphaBetaMax(Board& b, int depth, int alpha, int beta);
@@ -48,7 +47,7 @@ public:
     void makeMoves(Board& b, int color, QList<Board>& moves, QList<QList<int> > &msg);
     int evaluate(Board& b);
     void minimax();
-
+    void minimaxStep();
     void reset();
 };
 

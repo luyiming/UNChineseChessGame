@@ -25,5 +25,6 @@
         <file>src/button/button-pressed.png</file>
         <file>src/background03.png</file>
         <file>src/chess/selected.png</file>
+        <file alias="reviewBackground">src/background04.png</file>
     </qresource>
 </RCC>

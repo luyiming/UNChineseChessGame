@@ -1,0 +1,264 @@
+2016-05-13 10:00:40  INFO CreatServiceRunnable:86 - CreatServiceRunnable initialization complete!
+2016-05-13 10:00:40  INFO CreatServiceRunnable:98 - CreatServiceRunnable is running...
+2016-05-13 10:00:40  INFO CreatServiceRunnable:292 - Start test mode!
+2016-05-13 10:01:12  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:01:12  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:03:46  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:03:46  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:13:31  INFO CreatServiceRunnable:86 - CreatServiceRunnable initialization complete!
+2016-05-13 10:13:31  INFO CreatServiceRunnable:98 - CreatServiceRunnable is running...
+2016-05-13 10:13:31  INFO CreatServiceRunnable:292 - Start test mode!
+2016-05-13 10:13:52  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:13:52  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:15:39  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:15:39  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:17:16  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:17:16  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:30:55  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:30:55  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:33:29  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:33:29  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:37:06  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:37:06  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:38:23  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:38:23  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:39:27  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:39:27  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:41:23  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:41:23  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:45:17  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:45:17  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:46:03  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:46:03  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:46:06  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:46:06  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:48:52  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:48:52  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:49:29  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:49:29  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:53:18  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:53:18  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:53:46  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:53:46  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:54:12  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:54:12  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:54:27  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:54:27  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:54:28  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:54:28  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:54:30  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:54:30  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:01  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:01  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:02  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:02  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:03  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:03  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:04  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:04  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:05  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:05  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:06  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:06  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:07  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:07  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:08  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:08  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:09  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:09  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:10  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:10  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:22  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:22  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:23  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:23  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:24  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:24  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:25  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:25  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:26  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:26  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:27  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:27  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:27  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:27  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:28  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:28  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:29  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:29  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 10:55:30  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 10:55:30  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 11:23:59  INFO CreatServiceRunnable:353 - Accepted 123456789
+2016-05-13 11:23:59  INFO CreatServiceRunnable:367 - Welcome 123456789
+2016-05-13 20:11:59  INFO CreatServiceRunnable:86 - CreatServiceRunnable initialization complete!
+2016-05-13 20:11:59  INFO CreatServiceRunnable:98 - CreatServiceRunnable is running...
+2016-05-13 20:11:59  INFO CreatServiceRunnable:107 - Start contest mode!
+2016-05-13 20:11:59  INFO CreatServiceRunnable:117 - The number of registered players: 0
+2016-05-13 20:14:27  INFO CreatServiceRunnable:86 - CreatServiceRunnable initialization complete!
+2016-05-13 20:14:27  INFO CreatServiceRunnable:98 - CreatServiceRunnable is running...
+2016-05-13 20:14:27  INFO CreatServiceRunnable:107 - Start contest mode!
+2016-05-13 20:14:27  INFO CreatServiceRunnable:117 - The number of registered players: 0
+2016-05-13 20:14:43  INFO CreatServiceRunnable:185 - Accepted lllyyymmm
+2016-05-13 20:14:43  INFO CreatServiceRunnable:201 - Welcome lllyyymmm
+2016-05-13 20:14:43  INFO CreatServiceRunnable:117 - The number of registered players: 1
+2016-05-13 20:14:55  INFO CreatServiceRunnable:185 - Accepted lllwwwbbb
+2016-05-13 20:14:55  INFO CreatServiceRunnable:201 - Welcome lllwwwbbb
+2016-05-13 20:14:55  INFO CreatServiceRunnable:117 - The number of registered players: 2
+2016-05-13 20:15:43  INFO CreatServiceRunnable:185 - Accepted lllwwwbbb
+2016-05-13 20:15:43  INFO CreatServiceRunnable:201 - Welcome lllwwwbbb
+2016-05-13 20:15:43  INFO CreatServiceRunnable:117 - The number of registered players: 3
+2016-05-13 20:15:47  INFO CreatServiceRunnable:185 - Accepted lllyyymmm
+2016-05-13 20:15:47  INFO CreatServiceRunnable:201 - Welcome lllyyymmm
+2016-05-13 20:15:47  INFO CreatServiceRunnable:258 - The number of registered players: 4
+2016-05-13 20:15:47  INFO CreatServiceRunnable:262 - No passed player in contest
+2016-05-13 20:15:47  INFO CreatServiceRunnable:264 - Contest start!
+2016-05-13 20:16:44  INFO CreatServiceRunnable:86 - CreatServiceRunnable initialization complete!
+2016-05-13 20:16:44  INFO CreatServiceRunnable:98 - CreatServiceRunnable is running...
+2016-05-13 20:16:44  INFO CreatServiceRunnable:107 - Start contest mode!
+2016-05-13 20:16:44  INFO CreatServiceRunnable:117 - The number of registered players: 0
+2016-05-13 20:16:56  INFO CreatServiceRunnable:185 - Accepted lllwwwbbb
+2016-05-13 20:16:56  INFO CreatServiceRunnable:201 - Welcome lllwwwbbb
+2016-05-13 20:16:56  INFO CreatServiceRunnable:117 - The number of registered players: 1
+2016-05-13 20:16:58  INFO CreatServiceRunnable:185 - Accepted lllyyymmm
+2016-05-13 20:16:58  INFO CreatServiceRunnable:201 - Welcome lllyyymmm
+2016-05-13 20:16:58  INFO CreatServiceRunnable:117 - The number of registered players: 2
+2016-05-13 20:22:25  INFO CreatServiceRunnable:185 - Accepted lllyyymmm
+2016-05-13 20:22:25  INFO CreatServiceRunnable:201 - Welcome lllyyymmm
+2016-05-13 20:22:25  INFO CreatServiceRunnable:117 - The number of registered players: 3
+2016-05-13 20:22:27  INFO CreatServiceRunnable:185 - Accepted lllwwwbbb
+2016-05-13 20:22:27  INFO CreatServiceRunnable:201 - Welcome lllwwwbbb
+2016-05-13 20:22:27  INFO CreatServiceRunnable:258 - The number of registered players: 4
+2016-05-13 20:22:27  INFO CreatServiceRunnable:262 - No passed player in contest
+2016-05-13 20:22:27  INFO CreatServiceRunnable:264 - Contest start!
+2016-05-13 20:23:42  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:23:43  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:24:04  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:24:04  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:24:26  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:24:27  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:24:42  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:24:43  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:24:51  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:24:53  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:24:54  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:24:55  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:24:56  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:24:57  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:24:58  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:25:02  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:25:06  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:25:07  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:25:08  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:25:08  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:25:09  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:25:10  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:25:19  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:25:20  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:25:23  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:26:16  INFO CreatServiceRunnable:86 - CreatServiceRunnable initialization complete!
+2016-05-13 20:26:16  INFO CreatServiceRunnable:98 - CreatServiceRunnable is running...
+2016-05-13 20:26:16  INFO CreatServiceRunnable:107 - Start contest mode!
+2016-05-13 20:26:16  INFO CreatServiceRunnable:117 - The number of registered players: 0
+2016-05-13 20:26:31  INFO CreatServiceRunnable:185 - Accepted lllwwwbbb
+2016-05-13 20:26:31  INFO CreatServiceRunnable:201 - Welcome lllwwwbbb
+2016-05-13 20:26:31  INFO CreatServiceRunnable:117 - The number of registered players: 1
+2016-05-13 20:26:34  INFO CreatServiceRunnable:185 - Accepted lllyyymmm
+2016-05-13 20:26:34  INFO CreatServiceRunnable:201 - Welcome lllyyymmm
+2016-05-13 20:26:34  INFO CreatServiceRunnable:117 - The number of registered players: 2
+2016-05-13 20:27:49  INFO CreatServiceRunnable:86 - CreatServiceRunnable initialization complete!
+2016-05-13 20:27:49  INFO CreatServiceRunnable:98 - CreatServiceRunnable is running...
+2016-05-13 20:27:49  INFO CreatServiceRunnable:107 - Start contest mode!
+2016-05-13 20:27:49  INFO CreatServiceRunnable:117 - The number of registered players: 0
+2016-05-13 20:27:52  INFO CreatServiceRunnable:185 - Accepted lllyyymmm
+2016-05-13 20:27:52  INFO CreatServiceRunnable:201 - Welcome lllyyymmm
+2016-05-13 20:27:52  INFO CreatServiceRunnable:117 - The number of registered players: 1
+2016-05-13 20:27:54  INFO CreatServiceRunnable:185 - Accepted lllwwwbbb
+2016-05-13 20:27:54  INFO CreatServiceRunnable:201 - Welcome lllwwwbbb
+2016-05-13 20:27:54  INFO CreatServiceRunnable:258 - The number of registered players: 2
+2016-05-13 20:27:54  INFO CreatServiceRunnable:262 - No passed player in contest
+2016-05-13 20:27:54  INFO CreatServiceRunnable:264 - Contest start!
+2016-05-13 20:28:42  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:28:43  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:29:02  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:29:03  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:29:12  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:29:13  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 20:29:21  INFO CreatServiceRunnable:86 - CreatServiceRunnable initialization complete!
+2016-05-13 20:29:21  INFO CreatServiceRunnable:98 - CreatServiceRunnable is running...
+2016-05-13 20:29:21  INFO CreatServiceRunnable:107 - Start contest mode!
+2016-05-13 20:29:21  INFO CreatServiceRunnable:117 - The number of registered players: 0
+2016-05-13 20:29:25  INFO CreatServiceRunnable:185 - Accepted lllwwwbbb
+2016-05-13 20:29:25  INFO CreatServiceRunnable:201 - Welcome lllwwwbbb
+2016-05-13 20:29:25  INFO CreatServiceRunnable:117 - The number of registered players: 1
+2016-05-13 20:29:27  INFO CreatServiceRunnable:185 - Accepted lllyyymmm
+2016-05-13 20:29:27  INFO CreatServiceRunnable:201 - Welcome lllyyymmm
+2016-05-13 20:29:27  INFO CreatServiceRunnable:258 - The number of registered players: 2
+2016-05-13 20:29:27  INFO CreatServiceRunnable:262 - No passed player in contest
+2016-05-13 20:29:27  INFO CreatServiceRunnable:264 - Contest start!
+2016-05-13 20:31:21  INFO CreatServiceRunnable:86 - CreatServiceRunnable initialization complete!
+2016-05-13 20:31:21  INFO CreatServiceRunnable:98 - CreatServiceRunnable is running...
+2016-05-13 20:31:21  INFO CreatServiceRunnable:107 - Start contest mode!
+2016-05-13 20:31:21  INFO CreatServiceRunnable:117 - The number of registered players: 0
+2016-05-13 20:31:26  INFO CreatServiceRunnable:185 - Accepted lllwwwbbb
+2016-05-13 20:31:26  INFO CreatServiceRunnable:201 - Welcome lllwwwbbb
+2016-05-13 20:31:26  INFO CreatServiceRunnable:117 - The number of registered players: 1
+2016-05-13 20:31:27  INFO CreatServiceRunnable:185 - Accepted lllyyymmm
+2016-05-13 20:31:27  INFO CreatServiceRunnable:201 - Welcome lllyyymmm
+2016-05-13 20:31:27  INFO CreatServiceRunnable:258 - The number of registered players: 2
+2016-05-13 20:31:27  INFO CreatServiceRunnable:262 - No passed player in contest
+2016-05-13 20:31:27  INFO CreatServiceRunnable:264 - Contest start!
+2016-05-13 20:32:13  INFO CreatServiceRunnable:86 - CreatServiceRunnable initialization complete!
+2016-05-13 20:32:13  INFO CreatServiceRunnable:98 - CreatServiceRunnable is running...
+2016-05-13 20:32:13  INFO CreatServiceRunnable:107 - Start contest mode!
+2016-05-13 20:32:13  INFO CreatServiceRunnable:117 - The number of registered players: 0
+2016-05-13 20:33:00  INFO CreatServiceRunnable:185 - Accepted lllwwwbbb
+2016-05-13 20:33:00  INFO CreatServiceRunnable:201 - Welcome lllwwwbbb
+2016-05-13 20:33:00  INFO CreatServiceRunnable:117 - The number of registered players: 1
+2016-05-13 20:33:02  INFO CreatServiceRunnable:185 - Accepted lllyyymmm
+2016-05-13 20:33:02  INFO CreatServiceRunnable:201 - Welcome lllyyymmm
+2016-05-13 20:33:02  INFO CreatServiceRunnable:258 - The number of registered players: 2
+2016-05-13 20:33:02  INFO CreatServiceRunnable:262 - No passed player in contest
+2016-05-13 20:33:02  INFO CreatServiceRunnable:264 - Contest start!
+2016-05-13 20:33:52  INFO CreatServiceRunnable:86 - CreatServiceRunnable initialization complete!
+2016-05-13 20:33:53  INFO CreatServiceRunnable:98 - CreatServiceRunnable is running...
+2016-05-13 20:33:53  INFO CreatServiceRunnable:107 - Start contest mode!
+2016-05-13 20:33:53  INFO CreatServiceRunnable:117 - The number of registered players: 0
+2016-05-13 20:34:05  INFO CreatServiceRunnable:185 - Accepted lllwwwbbb
+2016-05-13 20:34:05  INFO CreatServiceRunnable:201 - Welcome lllwwwbbb
+2016-05-13 20:34:05  INFO CreatServiceRunnable:117 - The number of registered players: 1
+2016-05-13 20:34:07  INFO CreatServiceRunnable:185 - Accepted lllyyymmm
+2016-05-13 20:34:07  INFO CreatServiceRunnable:201 - Welcome lllyyymmm
+2016-05-13 20:34:07  INFO CreatServiceRunnable:258 - The number of registered players: 2
+2016-05-13 20:34:07  INFO CreatServiceRunnable:262 - No passed player in contest
+2016-05-13 20:34:07  INFO CreatServiceRunnable:264 - Contest start!
+2016-05-13 20:39:45  INFO CreatServiceRunnable:86 - CreatServiceRunnable initialization complete!
+2016-05-13 20:39:45  INFO CreatServiceRunnable:98 - CreatServiceRunnable is running...
+2016-05-13 20:39:45  INFO CreatServiceRunnable:292 - Start test mode!
+2016-05-13 20:39:48  INFO CreatServiceRunnable:353 - Accepted lllyyymmm
+2016-05-13 20:39:48  INFO CreatServiceRunnable:367 - Welcome lllyyymmm
+2016-05-13 20:42:23  INFO CreatServiceRunnable:86 - CreatServiceRunnable initialization complete!
+2016-05-13 20:42:23  INFO CreatServiceRunnable:98 - CreatServiceRunnable is running...
+2016-05-13 20:42:23  INFO CreatServiceRunnable:107 - Start contest mode!
+2016-05-13 20:42:23  INFO CreatServiceRunnable:117 - The number of registered players: 0
+2016-05-13 20:42:26  INFO CreatServiceRunnable:185 - Accepted lllwwwbbb
+2016-05-13 20:42:26  INFO CreatServiceRunnable:201 - Welcome lllwwwbbb
+2016-05-13 20:42:26  INFO CreatServiceRunnable:117 - The number of registered players: 1
+2016-05-13 20:42:32  INFO CreatServiceRunnable:185 - Accepted lllyyymmm
+2016-05-13 20:42:32  INFO CreatServiceRunnable:201 - Welcome lllyyymmm
+2016-05-13 20:42:32  INFO CreatServiceRunnable:258 - The number of registered players: 2
+2016-05-13 20:42:32  INFO CreatServiceRunnable:262 - No passed player in contest
+2016-05-13 20:42:32  INFO CreatServiceRunnable:264 - Contest start!
+2016-05-13 21:17:13  INFO CreatServiceRunnable:86 - CreatServiceRunnable initialization complete!
+2016-05-13 21:17:13  INFO CreatServiceRunnable:98 - CreatServiceRunnable is running...
+2016-05-13 21:17:13  INFO CreatServiceRunnable:107 - Start contest mode!
+2016-05-13 21:17:13  INFO CreatServiceRunnable:117 - The number of registered players: 0
+2016-05-13 21:17:22  INFO CreatServiceRunnable:185 - Accepted lllwwwbbb
+2016-05-13 21:17:22  INFO CreatServiceRunnable:201 - Welcome lllwwwbbb
+2016-05-13 21:17:22  INFO CreatServiceRunnable:117 - The number of registered players: 1
+2016-05-13 21:17:23  INFO CreatServiceRunnable:185 - Accepted lllyyymmm
+2016-05-13 21:17:23  INFO CreatServiceRunnable:201 - Welcome lllyyymmm
+2016-05-13 21:17:23  INFO CreatServiceRunnable:258 - The number of registered players: 2
+2016-05-13 21:17:23  INFO CreatServiceRunnable:262 - No passed player in contest
+2016-05-13 21:17:23  INFO CreatServiceRunnable:264 - Contest start!
+2016-05-13 21:17:44  INFO CreatServiceRunnable:52 - This round of contest is over!
+2016-05-13 21:17:47  INFO CreatServiceRunnable:52 - This round of contest is over!

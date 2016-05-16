@@ -8,12 +8,12 @@
 #include <QLabel>
 #include <QEvent>
 
-//枚举，按钮状态
+
 enum eButtonState{
-     btnNone,//无效
-     btnDefault,//默认值(如按钮初始显示)
-     btnHover,//鼠标移到按钮上状态
-     btnPressed//鼠标按下按钮时状态
+     btnNone,
+     btnDefault,
+     btnHover,
+     btnPressed
 };
 
 namespace Ui {

@@ -39,17 +39,44 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->pwdLine->setText(PASSWORD);
     ui->portLine->setText(QString::number(SERVER_PORT));
 
-    setStyleSheet("QPushButton{border-image:url(:/src/button/button-normal.png);}"
-                                      "QPushButton:hover{border-image: url(:/src/button/button-hover.png);}"
-                                      "QPushButton:pressed{border-image: url(:/src/button/button-pressed.png);}");
+    setStyleSheet("#connectButton{border-image:url(:/src/button/button-normal.png);}"
+                  "#connectButton:hover{border-image: url(:/src/button/button-hover.png);}"
+                  "#connectButton:pressed{border-image: url(:/src/button/button-pressed.png);}"
+                  "#aiButton{border-image:url(:/src/button/button-normal.png);}"
+                  "#aiButton:hover{border-image: url(:/src/button/button-hover.png);}"
+                  "#aiButton:pressed{border-image: url(:/src/button/button-pressed.png);}"
+                  "#nextButton{border-image:url(:/src/button/button-normal.png);}"
+                  "#nextButton:hover{border-image: url(:/src/button/button-hover.png);}"
+                  "#nextButton:pressed{border-image: url(:/src/button/button-pressed.png);}"
+                  "#reviewButton{border-image:url(:/src/button/button-normal.png);}"
+                  "#reviewButton:hover{border-image: url(:/src/button/button-hover.png);}"
+                  "#reviewButton:pressed{border-image: url(:/src/button/button-pressed.png);}"
+                  "#configButton{border-image:url(:/src/button/button-normal.png);}"
+                  "#configButton:hover{border-image: url(:/src/button/button-hover.png);}"
+                  "#configButton:pressed{border-image: url(:/src/button/button-pressed.png);}"
+                  "#quitButton{border-image:url(:/src/button/button-normal.png);}"
+                  "#quitButton:hover{border-image: url(:/src/button/button-hover.png);}"
+                  "#quitButton:pressed{border-image: url(:/src/button/button-pressed.png);}"
+                  "#backButton{border-image:url(:/src/button/button-normal.png);}"
+                  "#backButton:hover{border-image: url(:/src/button/button-hover.png);}"
+                  "#backButton:pressed{border-image: url(:/src/button/button-pressed.png);}"
+                  "#jumpButton{border-image:url(:/src/button/button-normal.png);}"
+                  "#jumpButton:hover{border-image: url(:/src/button/button-hover.png);}"
+                  "#jumpButton:pressed{border-image: url(:/src/button/button-pressed.png);}"
+                  "#importButton{border-image:url(:/src/button/button-normal.png);}"
+                  "#importButton:hover{border-image: url(:/src/button/button-hover.png);}"
+                  "#importButton:pressed{border-image: url(:/src/button/button-pressed.png);}"
+                  "#deleteButton{border-image:url(:/src/button/button-normal.png);}"
+                  "#deleteButton:hover{border-image: url(:/src/button/button-hover.png);}"
+                  "#deleteButton:pressed{border-image: url(:/src/button/button-pressed.png);}");
 
-    ui->connectButton->resize(QPixmap(":/src/button/connect-normal.png").size());
-    //ui->pushButton->setIconSize(img.size());
-    //ui->pushButton->setIcon(QIcon(img));
-    ui->connectButton->setMask(QPixmap(":/src/button/connect-normal.png").mask());
-    ui->connectButton->setStyleSheet("QPushButton{border-image:url(:/src/button/connect-normal.png);}"
-                                  "QPushButton:hover{border-image: url(:/src/button/connect-hover.png);}"
-                                  "QPushButton:pressed{border-image: url(:/src/button/connect-pressed.png);}");
+//    ui->connectButton->resize(QPixmap(":/src/button/connect-normal.png").size());
+//    //ui->pushButton->setIconSize(img.size());
+//    //ui->pushButton->setIcon(QIcon(img));
+//    ui->connectButton->setMask(QPixmap(":/src/button/connect-normal.png").mask());
+//    ui->connectButton->setStyleSheet("QPushButton{border-image:url(:/src/button/connect-normal.png);}"
+//                                  "QPushButton:hover{border-image: url(:/src/button/connect-hover.png);}"
+//                                  "QPushButton:pressed{border-image: url(:/src/button/connect-pressed.png);}");
 
     countDownTimer = new QTimer(this);
     connect(countDownTimer, &QTimer::timeout, [&](){this->countDown(false);});
@@ -177,7 +204,11 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
 
 void MainWindow::on_connectButton_clicked()
 {
-    game->authorize(ID, PASSWORD);
+    char *id_ = ui->idLine->text().toLatin1().data();
+    char *password_ = ui->pwdLine->text().toLatin1().data();
+
+    game->authorize(id_, password_);
+    //game->authorize(ID, PASSWORD);
     game->roundStart(0);
     update();
     //ui->connectButton->setDisabled(true);
@@ -216,7 +247,7 @@ void MainWindow::on_nextButton_clicked()
 
 void MainWindow::on_reviewButton_clicked()
 {
-    ReviewDialog *reviewDialog = new ReviewDialog(this, game->record);
-    connect(reviewDialog, &ReviewDialog::signal_review, [&](int round, int num){game->review(round, num); update();});
+    ReviewDialog *reviewDialog = new ReviewDialog(this);
+    connect(reviewDialog, &ReviewDialog::signal_review, [&](Board board){game->setBoard(board); update();});
     reviewDialog->show();
 }

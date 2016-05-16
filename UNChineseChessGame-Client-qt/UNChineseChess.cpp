@@ -11,6 +11,7 @@
 #include <QList>
 #include <QDebug>
 #include <QFile>
+#include <QTime>
 
 #define ROWS 4
 #define COLS 4
@@ -66,7 +67,7 @@ void Game::gameOver() {
     }
     ownColor = oppositeColor = -1;
     curRound = 0;
-    curContest++;
+    record.clear();
 }
 
 void Game::roundStart(int round) {
@@ -102,7 +103,7 @@ void Game::oneRound() {
     case 0:
         while (true) {
             step();
-            //minimax();
+            //minimaxStep();
             if (observe() == 1) break;
             saveChessBoard();
             if (observe() == 1) break;
@@ -114,7 +115,7 @@ void Game::oneRound() {
             if (observe() == 1) break;
             saveChessBoard();
             step();
-            //minimax();
+            //minimaxStep();
             if (observe() == 1) break;
             saveChessBoard();
         }
@@ -241,65 +242,49 @@ void Game::noStep() {
 }
 
 void Game::saveChessBoard() {
-    if((curContest * 3 + curRound) != record.size() - 1)
+    if(curRound != record.size() - 1)
     {
         Record temp;
         temp.ownColor = ownColor;
         record.append(temp);
     }
-    record[curContest * 3 + curRound].boards.append(board);
+    record[curRound].boards.append(board);
 
     if(saveToFile)
     {
-        QFile file(QString("record/contest-") + QString::number(curContest) + "-record.txt");
+        QDateTime time = QDateTime::currentDateTime();
+        QString suffix = time.toString("MM-dd hh") + "h" + time.toString("mm") + "m" + time.toString("ss") + "s";
+
+        QFile file(QString("record/" + suffix) + ".dat");
         file.open(QFile::WriteOnly);
         QTextStream fout(&file);
         for(int i = 0; i < ROUNDS; i++)
         {
-            fout << "Round " << i << " start:\n";
-            for(auto it = record[curContest * 3 + i].boards.begin(); it != record[curContest * 3 + i].boards.end(); ++it)
+            fout << i << record[i].ownColor << endl;
+            for(auto it = record[i].boards.begin(); it != record[i].boards.end(); ++it)
             {
                 for (int r = 0; r < ROWS; r++)
                 {
                     for (int c = 0; c < COLS; ++c)
                     {
                         if((*it)[r][c].empty)
-                            fout << "-- ";
+                            fout << "--";
                         else if(!(*it)[r][c].valid)
-                            fout << "## ";
+                            fout << "##";
                         else
-                        {
-                            if((*it)[r][c].color == 0)
-                                fout << "R";
-                            else
-                                fout << "B";
-                            fout << (*it)[r][c].piece << " ";
-                        }
-                        if(c == COLS - 1)
-                            fout << endl;
+                            fout << (*it)[r][c].color << (*it)[r][c].piece;
                     }
                 }
                 fout << endl;
             }
-            fout << "Round end\n";
         }
         file.close();
     }
-
 }
 
-int Game::review(int round, int num)
+void Game::setBoard(Board &b)
 {
-    if(round < 0 || round >= record.size())
-        return -1;
-    else if(num < 0 || num >= record[round].boards.size())
-        return -2;
-    else
-    {
-        ownColor = record[round].ownColor;
-        board = record[round].boards[num];
-        return 1;
-    }
+    this->board = b;
 }
 
 void Game::step() {
@@ -459,6 +444,7 @@ void Game::step() {
 
 int Game::alphaBetaMax(Board& b, int depth, int alpha, int beta)
 {
+   qDebug() << "max";
    if (depth == 0)
        return evaluate(b);
    QList<Board> moves;
@@ -472,12 +458,16 @@ int Game::alphaBetaMax(Board& b, int depth, int alpha, int beta)
    for(int i = 0; i < moves.size(); ++i)
    {
       int score = alphaBetaMin(moves[i], depth - 1, alpha, beta);
+      qDebug() << "score:" << score;
       if(score >= beta)
          return beta;   //beta-cutoff
       if(score > alpha)
       {
-          if(depth == 6)
+          if(depth == 4)
+          {
              movemsg = msg[i];
+             qDebug() << "score:" << score;
+          }
          alpha = score; // alpha acts like max in MiniMax
       }
    }
@@ -504,6 +494,8 @@ int Game::alphaBetaMin(Board& b, int depth, int alpha, int beta)
       if(score < beta)
          beta = score; // beta acts like min in MiniMax
    }
+   if(moves.empty())
+       return -evaluate(b);
    return beta;
 }
 
@@ -573,7 +565,7 @@ void Game::makeMoves(Board& b, int color, QList<Board> & moves, QList<QList<int>
                             moves.push_back(nb);
                             msg.push_back(QList<int>{r,c,nr,nc});
                         }
-                        else if((b[nr][nc].piece == 6 && b[r][c].piece == 0) || b[nr][nc].piece < b[r][c].piece)
+                        else if((b[nr][nc].piece == 6 && b[r][c].piece == 0) || (b[nr][nc].piece < b[r][c].piece))
                         {
                             if((b[nr][nc].piece == 0 && b[r][c].piece == 6))
                                 continue;
@@ -775,6 +767,64 @@ int Game::tryMove(int r, int c)
     return 1;
 }
 
+void Game::minimaxStep()
+{
+    movemsg.clear();
+    int abscore = alphaBetaMax(board, 6, -100000, 100000);
+    int score = -100000;
+    int srcRow = -1, srcCol = -1;
+    for (int r = 0; r < ROWS; r++)
+    {
+        for (int c = 0; c < COLS; c++)
+        {
+            if(board[r][c].empty)
+                continue;
+            if(!board[r][c].valid)
+            {
+                for(int i = 0; i < 4; ++i)
+                {
+                    int nr = r + mr2[i];
+                    int nc = c + mc2[i];
+                    if(nr < 0 || nr >= ROWS || nc < 0 || nc >= COLS)
+                        continue;
+                    if(board[nr][nc].piece == 1 && board[nr][nc].color == ownColor)
+                    {
+                        int tempScore = evaluate(board) + 1;
+                        if(tempScore > score)
+                        {
+                            score = tempScore;
+                            srcRow = r;
+                            srcCol = c;
+                        }
+                    }
+                }
+                int tempScore = evaluate(board);
+                if(tempScore > score)
+                {
+                    score = tempScore;
+                    srcRow = r;
+                    srcCol = c;
+                }
+            }
+        }
+    }
+    if(score > abscore)
+    {
+        reversePiece(srcRow, srcCol);
+        qDebug() << "reverse:" << srcRow << srcCol;
+    }
+    else if(movemsg.size() != 0)
+    {
+        movePiece(movemsg.at(0), movemsg.at(1), movemsg.at(2), movemsg.at(3));
+        qDebug() << "move:" << movemsg.at(0) << movemsg.at(1) << movemsg.at(2) << movemsg.at(3);
+    }
+    else
+    {
+        qDebug() << movemsg.size();
+        qDebug() << "nostep";
+        noStep();
+    }
+}
 
 void Game::minimax()
 {
@@ -796,7 +846,7 @@ void Game::minimax()
         saveChessBoard();
     }
     movemsg.clear();
-    int score1 = alphaBetaMax(board, 6, -100000, 100000);
+    int score1 = alphaBetaMax(board, 4, -100000, 100000);
     int score = -100000;
     int srcRow = -1, srcCol = -1;
     for (int r = 0; r < ROWS; r++)
@@ -864,7 +914,6 @@ void Game::minimax()
             }
             else
                 roundStart(curRound);
-            return;
         }
         saveChessBoard();
     }

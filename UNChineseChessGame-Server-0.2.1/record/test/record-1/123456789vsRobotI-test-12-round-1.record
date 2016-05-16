@@ -4,10 +4,19 @@ ROUND_START 1
 COLOR RED:P1 BLACK:P0
 INITIAL CHESS BOARD
 -------------------
-NIR3 NIB3 NIB0 NIB1 
-NIR4 NIR5 NIB4 NIR2 
-NIB6 NIB2 NIR1 NIR0 
-NIR6 NIB0 NIB5 NIR0 
+NIB1 NIR3 NIR0 NIR1 
+NIB5 NIB2 NIB0 NIB6 
+NIR6 NIR2 NIR0 NIB3 
+NIB4 NIR5 NIB0 NIR4 
 -------------------
-SEND_ERROR BLACK
+VALID_STEP RED SR0000
+-------------------
+|B1| |##| |##| |##| 
+|##| |##| |##| |##| 
+|##| |##| |##| |##| 
+|##| |##| |##| |##| 
+-------------------
+TIMEOUT BLACK 0
+TIMEOUT RED 0
+ROUND_ERROR 1
 ROUND_END 1

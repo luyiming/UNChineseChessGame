@@ -1,0 +1,45 @@
+TEST 12
+INFO lllyyymmm VS RobotI
+ROUND_START 0
+COLOR RED:P0 BLACK:P1
+INITIAL CHESS BOARD
+-------------------
+NIB3 NIR5 NIR6 NIB0 
+NIR0 NIB4 NIR4 NIR0 
+NIR3 NIR1 NIB1 NIB2 
+NIB0 NIB5 NIR2 NIB6 
+-------------------
+VALID_STEP RED SR0000
+-------------------
+|B3| |##| |##| |##| 
+|##| |##| |##| |##| 
+|##| |##| |##| |##| 
+|##| |##| |##| |##| 
+-------------------
+VALID_STEP BLACK SR0101
+-------------------
+|B3| |R5| |##| |##| 
+|##| |##| |##| |##| 
+|##| |##| |##| |##| 
+|##| |##| |##| |##| 
+-------------------
+VALID_STEP RED SR0202
+-------------------
+|B3| |R5| |R6| |##| 
+|##| |##| |##| |##| 
+|##| |##| |##| |##| 
+|##| |##| |##| |##| 
+-------------------
+VALID_STEP BLACK SR0303
+-------------------
+|B3| |R5| |R6| |B0| 
+|##| |##| |##| |##| 
+|##| |##| |##| |##| 
+|##| |##| |##| |##| 
+-------------------
+TIMEOUT RED 1
+TIMEOUT RED 2
+TIMEOUT RED 3
+TIMEOUT RED 4
+ERROR_MAXTIME RED
+ROUND_END 0

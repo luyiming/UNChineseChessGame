@@ -4,6 +4,7 @@
 #include <windows.h>
 #include <iostream>
 #include <QDebug>
+#include <QtNetwork/QTcpSocket>
 
 #pragma comment(lib, "Ws2_32.lib")
 
@@ -86,5 +87,49 @@ void close()
     closesocket(client);
 	// WSA clean
     WSACleanup();
+    qDebug() << "Close socket";
+}
+
+void ClientSocket::ClientSocket()
+{
+    this->tcpSocket = new QTcpSocket(this);
+    connect(tcpSocket, &QTcpSocket::readyRead, this, &ClientSocket::recvMsg);
+    connect(tcpSocket,SIGNAL(error(QAbstractSocket::SocketError)),
+            this,SLOT(displayError(QAbstractSocket::SocketError)));
+}
+
+
+void ClientSocket::recvMsg()
+{
+    memset(recvBuf, 0, BUFSIZE);
+    tcpSocket->read(recvBuf, BUFSIZE);
+    qDebug() << recvBuf;
+}
+
+int ClientSocket::sendMsg(const char* msg)
+{
+    int len = strlen(msg);
+    len = len < BUFSIZE ? len : BUFSIZE;
+    memset(sendBuf, 0, BUFSIZE);
+    memcpy(sendBuf, msg, len);
+    tcpSocket->write(sendBuf, BUFSIZE);
+    qDebug() << sendBuf;
+}
+
+void ClientSocket::displayError(QAbstractSocket::SocketError)
+{
+    qDebug() << tcpSocket->errorString();
+}
+
+int ClientSocket::connectServer()
+{
+    qDebug() << "Connect server: " << SERVER_IP << ":" << SERVER_PORT;
+    tcpSocket->abort();
+    tcpSocket->connectToHost(QString(SERVER_IP), QString(SERVER_PORT));
+}
+
+void ClientSocket::close()
+{
+    tcpSocket->close();
     qDebug() << "Close socket";
 }

@@ -17,7 +17,7 @@
 #include <QStack>
 #include <QList>
 #include <QString>
-
+#include <QtNetwork/QTcpSocket>
 
 namespace Ui {
 class MainWindow;
@@ -54,11 +54,21 @@ private:
     QTimer *countDownTimer;
 
     Game *game = new Game;
+    ClientSocket *client_socket = new ClientSocket;
 
     int hr, hc;
     bool selected = false;
 
     void countDown(bool restart);
+
+    bool debugMode = false;
+
+    QTcpSocket *tcpSocket;
+    void recvMsg();
+    int sendMsg(const char* msg);
+    void displayError(QAbstractSocket::SocketError);
+    int connectServer();
+    void close();
 
 };
 
