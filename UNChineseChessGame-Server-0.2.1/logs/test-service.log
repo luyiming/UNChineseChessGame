@@ -1,232 +1,494 @@
-2016-05-16 09:38:13  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-0 begin!
-2016-05-16 09:38:13  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 0 start
-2016-05-16 09:38:30 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
-2016-05-16 09:38:30 ERROR TestServiceRunnable:165 - lllyyymmmvsRobotI-test-0 ROUND 0 Unkown Exception when receive RED step!
-2016-05-16 09:38:30 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:38:30  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 0 end
-2016-05-16 09:38:30  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 1 start
-2016-05-16 09:38:30 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:38:30 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:38:30  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 1 end
-2016-05-16 09:38:30 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:38:30  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-0 game over
-2016-05-16 09:38:30  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-0 result save completed!
-2016-05-16 09:38:30  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-0 record save completed!
-2016-05-16 09:38:49  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-1 begin!
-2016-05-16 09:38:49  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 0 start
-2016-05-16 09:39:07  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 0 end
-2016-05-16 09:39:07  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 1 start
-2016-05-16 09:39:12 ERROR TestServiceRunnable:248 - java.net.SocketException: Connection reset
-2016-05-16 09:39:12 ERROR TestServiceRunnable:249 - lllyyymmmvsRobotI-test-1 ROUND 1 Unkown Exception when receive BLACK step!
-2016-05-16 09:39:12 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:39:12  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 1 end
-2016-05-16 09:39:12  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 2 start
-2016-05-16 09:39:12 ERROR TestServiceRunnable:93 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:39:12 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:39:12  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 2 end
-2016-05-16 09:39:12 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:39:12  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-1 game over
-2016-05-16 09:39:12  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-1 result save completed!
-2016-05-16 09:39:12  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-1 record save completed!
-2016-05-16 09:40:02  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-2 begin!
-2016-05-16 09:40:02  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 0 start
-2016-05-16 09:40:12 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
-2016-05-16 09:40:12 ERROR TestServiceRunnable:165 - lllyyymmmvsRobotI-test-2 ROUND 0 Unkown Exception when receive RED step!
-2016-05-16 09:40:12 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:40:12  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 0 end
-2016-05-16 09:40:12  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 1 start
-2016-05-16 09:40:12 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:40:12 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:40:12  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 1 end
-2016-05-16 09:40:12 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:40:12  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-2 game over
-2016-05-16 09:40:12  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-2 result save completed!
-2016-05-16 09:40:13  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-2 record save completed!
-2016-05-16 09:40:35  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-3 begin!
-2016-05-16 09:40:35  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-3 round 0 start
-2016-05-16 09:40:56 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
-2016-05-16 09:40:56 ERROR TestServiceRunnable:144 - lllyyymmmvsRobotI-test-3 ROUND 0 TimeoutException when receive RED step: 1 time!
-2016-05-16 09:41:24 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
-2016-05-16 09:41:24 ERROR TestServiceRunnable:144 - lllyyymmmvsRobotI-test-3 ROUND 0 TimeoutException when receive RED step: 2 time!
-2016-05-16 09:41:41 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
-2016-05-16 09:41:41 ERROR TestServiceRunnable:144 - lllyyymmmvsRobotI-test-3 ROUND 0 TimeoutException when receive RED step: 3 time!
-2016-05-16 09:41:49 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
-2016-05-16 09:41:49 ERROR TestServiceRunnable:165 - lllyyymmmvsRobotI-test-3 ROUND 0 Unkown Exception when receive RED step!
-2016-05-16 09:41:49 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:41:49  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-3 round 0 end
-2016-05-16 09:41:49  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-3 round 1 start
-2016-05-16 09:41:49 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:41:49 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:41:49  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-3 round 1 end
-2016-05-16 09:41:49 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:41:49  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-3 game over
-2016-05-16 09:41:49  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-3 result save completed!
-2016-05-16 09:41:49  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-3 record save completed!
-2016-05-16 09:42:13  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-4 begin!
-2016-05-16 09:42:13  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-4 round 0 start
-2016-05-16 09:42:27 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
-2016-05-16 09:42:27 ERROR TestServiceRunnable:165 - lllyyymmmvsRobotI-test-4 ROUND 0 Unkown Exception when receive RED step!
-2016-05-16 09:42:27 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:42:27  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-4 round 0 end
-2016-05-16 09:42:27  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-4 round 1 start
-2016-05-16 09:42:27 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:42:27 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:42:27  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-4 round 1 end
-2016-05-16 09:42:27 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:42:27  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-4 game over
-2016-05-16 09:42:27  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-4 result save completed!
-2016-05-16 09:42:27  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-4 record save completed!
-2016-05-16 09:43:15  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-5 begin!
-2016-05-16 09:43:15  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-5 round 0 start
-2016-05-16 09:43:51 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
-2016-05-16 09:43:51 ERROR TestServiceRunnable:144 - lllyyymmmvsRobotI-test-5 ROUND 0 TimeoutException when receive RED step: 1 time!
-2016-05-16 09:43:59 ERROR TestServiceRunnable:307 - java.net.SocketException: Connection reset
-2016-05-16 09:43:59 ERROR TestServiceRunnable:308 - lllyyymmmvsRobotI-test-5 ROUND 0 Unkown Exception in 0 CONTEST
-2016-05-16 09:43:59 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:43:59  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-5 round 0 end
-2016-05-16 09:43:59  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-5 round 1 start
-2016-05-16 09:43:59 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:43:59 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:43:59  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-5 round 1 end
-2016-05-16 09:43:59 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:43:59  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-5 game over
-2016-05-16 09:43:59  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-5 result save completed!
-2016-05-16 09:43:59  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-5 record save completed!
-2016-05-16 09:44:33  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-6 begin!
-2016-05-16 09:44:33  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-6 round 0 start
-2016-05-16 09:44:41 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
-2016-05-16 09:44:41 ERROR TestServiceRunnable:165 - lllyyymmmvsRobotI-test-6 ROUND 0 Unkown Exception when receive RED step!
-2016-05-16 09:44:41 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:44:41  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-6 round 0 end
-2016-05-16 09:44:41  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-6 round 1 start
-2016-05-16 09:44:41 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:44:41 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:44:41  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-6 round 1 end
-2016-05-16 09:44:41 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:44:41  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-6 game over
-2016-05-16 09:44:41  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-6 result save completed!
-2016-05-16 09:44:41  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-6 record save completed!
-2016-05-16 09:44:54  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-7 begin!
-2016-05-16 09:44:54  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-7 round 0 start
-2016-05-16 09:45:06 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
-2016-05-16 09:45:06 ERROR TestServiceRunnable:144 - lllyyymmmvsRobotI-test-7 ROUND 0 TimeoutException when receive RED step: 1 time!
-2016-05-16 09:45:12 ERROR TestServiceRunnable:307 - java.net.SocketException: Connection reset
-2016-05-16 09:45:12 ERROR TestServiceRunnable:308 - lllyyymmmvsRobotI-test-7 ROUND 0 Unkown Exception in 0 CONTEST
-2016-05-16 09:45:12 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:45:12  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-7 round 0 end
-2016-05-16 09:45:12  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-7 round 1 start
-2016-05-16 09:45:12 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:45:12 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:45:12  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-7 round 1 end
-2016-05-16 09:45:12 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:45:12  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-7 game over
-2016-05-16 09:45:12  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-7 result save completed!
-2016-05-16 09:45:12  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-7 record save completed!
-2016-05-16 09:45:35  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-8 begin!
-2016-05-16 09:45:35  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-8 round 0 start
-2016-05-16 09:45:48 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
-2016-05-16 09:45:48 ERROR TestServiceRunnable:144 - lllyyymmmvsRobotI-test-8 ROUND 0 TimeoutException when receive RED step: 1 time!
-2016-05-16 09:45:54 ERROR TestServiceRunnable:307 - java.net.SocketException: Connection reset
-2016-05-16 09:45:54 ERROR TestServiceRunnable:308 - lllyyymmmvsRobotI-test-8 ROUND 0 Unkown Exception in 0 CONTEST
-2016-05-16 09:45:54 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:45:54  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-8 round 0 end
-2016-05-16 09:45:54  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-8 round 1 start
-2016-05-16 09:45:54 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:45:54 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:45:54  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-8 round 1 end
-2016-05-16 09:45:54 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:45:54  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-8 game over
-2016-05-16 09:45:54  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-8 result save completed!
-2016-05-16 09:45:54  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-8 record save completed!
-2016-05-16 09:47:48  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-9 begin!
-2016-05-16 09:47:48  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-9 round 0 start
-2016-05-16 09:48:36 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
-2016-05-16 09:48:36 ERROR TestServiceRunnable:144 - lllyyymmmvsRobotI-test-9 ROUND 0 TimeoutException when receive RED step: 1 time!
-2016-05-16 09:48:39 ERROR TestServiceRunnable:307 - java.net.SocketException: Connection reset
-2016-05-16 09:48:39 ERROR TestServiceRunnable:308 - lllyyymmmvsRobotI-test-9 ROUND 0 Unkown Exception in 0 CONTEST
-2016-05-16 09:48:39 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:48:39  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-9 round 0 end
-2016-05-16 09:48:39  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-9 round 1 start
-2016-05-16 09:48:39 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:48:39 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:48:39  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-9 round 1 end
-2016-05-16 09:48:39 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:48:39  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-9 game over
-2016-05-16 09:48:39  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-9 result save completed!
-2016-05-16 09:48:39  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-9 record save completed!
-2016-05-16 09:49:17  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-10 begin!
-2016-05-16 09:49:17  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-10 round 0 start
-2016-05-16 09:49:48 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
-2016-05-16 09:49:48 ERROR TestServiceRunnable:165 - lllyyymmmvsRobotI-test-10 ROUND 0 Unkown Exception when receive RED step!
-2016-05-16 09:49:48 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:49:48  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-10 round 0 end
-2016-05-16 09:49:48  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-10 round 1 start
-2016-05-16 09:49:48 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:49:48 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:49:48  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-10 round 1 end
-2016-05-16 09:49:48 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:49:48  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-10 game over
-2016-05-16 09:49:48  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-10 result save completed!
-2016-05-16 09:49:48  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-10 record save completed!
-2016-05-16 09:49:51  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-11 begin!
-2016-05-16 09:49:51  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-11 round 0 start
-2016-05-16 09:50:13 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
-2016-05-16 09:50:13 ERROR TestServiceRunnable:165 - lllyyymmmvsRobotI-test-11 ROUND 0 Unkown Exception when receive RED step!
-2016-05-16 09:50:13 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:50:13  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-11 round 0 end
-2016-05-16 09:50:13  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-11 round 1 start
-2016-05-16 09:50:13 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:50:13 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:50:13  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-11 round 1 end
-2016-05-16 09:50:13 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
-2016-05-16 09:50:13  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-11 game over
-2016-05-16 09:50:13  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-11 result save completed!
-2016-05-16 09:50:13  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-11 record save completed!
-2016-05-16 09:50:17  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-12 begin!
-2016-05-16 09:50:17  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-12 round 0 start
-2016-05-16 09:50:29 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
-2016-05-16 09:50:29 ERROR TestServiceRunnable:144 - lllyyymmmvsRobotI-test-12 ROUND 0 TimeoutException when receive RED step: 1 time!
-2016-05-16 09:50:39 ERROR TestServiceRunnable:151 - java.net.SocketTimeoutException: Read timed out
-2016-05-16 09:50:39 ERROR TestServiceRunnable:152 - lllyyymmmvsRobotI-test-12 ROUND 0 TimeoutException when receive RED step: 2 time!
-2016-05-16 09:50:49 ERROR TestServiceRunnable:151 - java.net.SocketTimeoutException: Read timed out
-2016-05-16 09:50:49 ERROR TestServiceRunnable:152 - lllyyymmmvsRobotI-test-12 ROUND 0 TimeoutException when receive RED step: 3 time!
-2016-05-16 09:50:59 ERROR TestServiceRunnable:151 - java.net.SocketTimeoutException: Read timed out
-2016-05-16 09:50:59 ERROR TestServiceRunnable:152 - lllyyymmmvsRobotI-test-12 ROUND 0 TimeoutException when receive RED step: 4 time!
-2016-05-16 09:50:59  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-12 round 0 end
-2016-05-16 09:50:59  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-12 round 1 start
-2016-05-16 09:51:09 ERROR TestServiceRunnable:119 - java.net.SocketTimeoutException: Read timed out
-2016-05-16 09:51:09 ERROR TestServiceRunnable:120 - lllyyymmmvsRobotI-test-12 ROUND 1 TimeoutException when synchronize red round
-2016-05-16 09:51:09  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-12 round 1 end
-2016-05-16 09:51:09  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-12 game over
-2016-05-16 09:51:09  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-12 result save completed!
-2016-05-16 09:51:09  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-12 record save completed!
-2016-05-16 13:23:57  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-0 begin!
-2016-05-16 13:23:57  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 0 start
-2016-05-16 13:23:58  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 0 end
-2016-05-16 13:23:58  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 1 start
-2016-05-16 13:24:11  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 1 end
-2016-05-16 13:24:11  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 2 start
-2016-05-16 13:24:16  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 2 end
-2016-05-16 13:24:16  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-0 game over
-2016-05-16 13:24:16  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-0 result save completed!
-2016-05-16 13:24:16  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-0 record save completed!
-2016-05-16 16:50:09  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-1 begin!
-2016-05-16 16:50:09  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 0 start
-2016-05-16 16:50:09  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 0 end
-2016-05-16 16:50:09  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 1 start
-2016-05-16 16:50:09  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 1 end
-2016-05-16 16:50:09  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 2 start
-2016-05-16 16:50:09  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 2 end
-2016-05-16 16:50:09  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-1 game over
-2016-05-16 16:50:09  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-1 result save completed!
-2016-05-16 16:50:09  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-1 record save completed!
-2016-05-16 16:50:20  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-2 begin!
-2016-05-16 16:50:20  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 0 start
-2016-05-16 16:50:20  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 0 end
-2016-05-16 16:50:20  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 1 start
-2016-05-16 16:50:20  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 1 end
-2016-05-16 16:50:20  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 2 start
-2016-05-16 16:50:20  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 2 end
-2016-05-16 16:50:20  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-2 game over
-2016-05-16 16:50:20  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-2 result save completed!
-2016-05-16 16:50:20  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-2 record save completed!
+2016-05-17 01:00:16  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-16 begin!
+2016-05-17 01:00:16  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-16 round 0 start
+2016-05-17 01:00:31  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-17 begin!
+2016-05-17 01:00:31  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-17 round 0 start
+2016-05-17 01:00:35 ERROR TestServiceRunnable:273 - java.net.SocketException: Software caused connection abort: socket write error
+2016-05-17 01:00:35 ERROR TestServiceRunnable:316 - java.net.SocketException: Software caused connection abort: socket write error
+2016-05-17 01:00:35  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-16 round 0 end
+2016-05-17 01:00:35 ERROR TestServiceRunnable:340 - java.net.SocketException: Software caused connection abort: socket write error
+2016-05-17 01:00:35  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-16 game over
+2016-05-17 01:00:35  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-16 result save completed!
+2016-05-17 01:00:35  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-16 record save completed!
+2016-05-17 01:00:35 ERROR TestServiceRunnable:126 - java.io.IOException: Stream closed
+2016-05-17 01:00:35 ERROR TestServiceRunnable:127 - lllyyymmmvsRobotI-test-17 ROUND 0 Unkown Exception when synchronize red round!
+2016-05-17 01:00:35 ERROR TestServiceRunnable:316 - java.net.SocketException: Socket closed
+2016-05-17 01:00:35  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-17 round 0 end
+2016-05-17 01:00:35 ERROR TestServiceRunnable:340 - java.lang.NullPointerException
+2016-05-17 01:00:35  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-17 game over
+2016-05-17 01:00:35  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-17 result save completed!
+2016-05-17 01:00:35  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-17 record save completed!
+2016-05-17 01:01:25  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-18 begin!
+2016-05-17 01:01:25  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-18 round 0 start
+2016-05-17 01:01:42 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-17 01:01:42 ERROR TestServiceRunnable:144 - lllyyymmmvsRobotI-test-18 ROUND 0 TimeoutException when receive RED step: 1 time!
+2016-05-17 01:01:48 ERROR TestServiceRunnable:273 - java.net.SocketException: Software caused connection abort: socket write error
+2016-05-17 01:01:48 ERROR TestServiceRunnable:316 - java.net.SocketException: Software caused connection abort: socket write error
+2016-05-17 01:01:48  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-18 round 0 end
+2016-05-17 01:01:48 ERROR TestServiceRunnable:340 - java.net.SocketException: Software caused connection abort: socket write error
+2016-05-17 01:01:48  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-18 game over
+2016-05-17 01:01:48  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-18 result save completed!
+2016-05-17 01:01:48  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-18 record save completed!
+2016-05-17 01:02:00  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-19 begin!
+2016-05-17 01:02:00  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-19 round 0 start
+2016-05-17 01:02:23  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-19 round 0 end
+2016-05-17 01:02:23  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-19 round 1 start
+2016-05-17 01:02:44  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-19 round 1 end
+2016-05-17 01:02:44  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-19 round 2 start
+2016-05-17 01:03:06  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-19 round 2 end
+2016-05-17 01:03:06  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-19 game over
+2016-05-17 01:03:06  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-19 result save completed!
+2016-05-17 01:03:06  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-19 record save completed!
+2016-05-17 01:03:45  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-20 begin!
+2016-05-17 01:03:45  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-20 round 0 start
+2016-05-17 01:03:47 ERROR TestServiceRunnable:273 - java.net.SocketException: Software caused connection abort: socket write error
+2016-05-17 01:03:47 ERROR TestServiceRunnable:316 - java.net.SocketException: Software caused connection abort: socket write error
+2016-05-17 01:03:47  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-20 round 0 end
+2016-05-17 01:03:47 ERROR TestServiceRunnable:340 - java.net.SocketException: Software caused connection abort: socket write error
+2016-05-17 01:03:47  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-20 game over
+2016-05-17 01:03:47  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-20 result save completed!
+2016-05-17 01:03:47  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-20 record save completed!
+2016-05-17 01:04:51  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-21 begin!
+2016-05-17 01:04:51  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-21 round 0 start
+2016-05-17 01:05:11  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-21 round 0 end
+2016-05-17 01:05:11  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-21 round 1 start
+2016-05-17 01:05:40  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-21 round 1 end
+2016-05-17 01:05:40  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-21 round 2 start
+2016-05-17 01:05:58  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-21 round 2 end
+2016-05-17 01:05:58  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-21 game over
+2016-05-17 01:05:58  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-21 result save completed!
+2016-05-17 01:05:58  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-21 record save completed!
+2016-05-17 10:28:52  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-0 begin!
+2016-05-17 10:28:52  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 0 start
+2016-05-17 10:29:20  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 0 end
+2016-05-17 10:29:20  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 1 start
+2016-05-17 10:29:36  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 1 end
+2016-05-17 10:29:36  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 2 start
+2016-05-17 10:30:04  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 2 end
+2016-05-17 10:30:04  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-0 game over
+2016-05-17 10:30:04  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-0 result save completed!
+2016-05-17 10:30:04  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-0 record save completed!
+2016-05-17 11:07:14  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-0 begin!
+2016-05-17 11:07:14  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 0 start
+2016-05-17 11:07:36  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 0 end
+2016-05-17 11:07:36  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 1 start
+2016-05-17 11:08:06  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 1 end
+2016-05-17 11:08:06  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 2 start
+2016-05-17 11:08:21  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 2 end
+2016-05-17 11:08:21  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-0 game over
+2016-05-17 11:08:21  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-0 result save completed!
+2016-05-17 11:08:21  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-0 record save completed!
+2016-05-17 11:08:28  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-1 begin!
+2016-05-17 11:08:28  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 0 start
+2016-05-17 11:08:28  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 0 end
+2016-05-17 11:08:28  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 1 start
+2016-05-17 11:08:29  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 1 end
+2016-05-17 11:08:29  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 2 start
+2016-05-17 11:08:29  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 2 end
+2016-05-17 11:08:29  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-1 game over
+2016-05-17 11:08:29  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-1 result save completed!
+2016-05-17 11:08:29  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-1 record save completed!
+2016-05-17 11:08:37  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-2 begin!
+2016-05-17 11:08:37  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 0 start
+2016-05-17 11:08:37  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 0 end
+2016-05-17 11:08:37  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 1 start
+2016-05-17 11:08:37  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 1 end
+2016-05-17 11:08:37  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 2 start
+2016-05-17 11:08:39  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 2 end
+2016-05-17 11:08:39  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-2 game over
+2016-05-17 11:08:39  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-2 result save completed!
+2016-05-17 11:08:39  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-2 record save completed!
+2016-05-17 11:09:09  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-3 begin!
+2016-05-17 11:09:09  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-3 round 0 start
+2016-05-17 11:09:10  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-3 round 0 end
+2016-05-17 11:09:10  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-3 round 1 start
+2016-05-17 11:09:11  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-3 round 1 end
+2016-05-17 11:09:11  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-3 round 2 start
+2016-05-17 11:09:12  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-3 round 2 end
+2016-05-17 11:09:12  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-3 game over
+2016-05-17 11:09:12  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-3 result save completed!
+2016-05-17 11:09:12  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-3 record save completed!
+2016-05-17 11:10:01  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-0 begin!
+2016-05-17 11:10:01  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 0 start
+2016-05-17 11:10:17  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 0 end
+2016-05-17 11:10:17  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 1 start
+2016-05-17 11:10:28 ERROR TestServiceRunnable:227 - java.net.SocketTimeoutException: Read timed out
+2016-05-17 11:10:28 ERROR TestServiceRunnable:228 - lllyyymmmvsRobotI-test-0 ROUND 1 TimeoutException when receive BLACK step: 1 time!
+2016-05-17 11:10:38 ERROR TestServiceRunnable:235 - java.net.SocketTimeoutException: Read timed out
+2016-05-17 11:10:38 ERROR TestServiceRunnable:236 - lllyyymmmvsRobotI-test-0 ROUND 1 TimeoutException when receive BLACK step: 2 time!
+2016-05-17 11:10:48 ERROR TestServiceRunnable:235 - java.net.SocketTimeoutException: Read timed out
+2016-05-17 11:10:48 ERROR TestServiceRunnable:236 - lllyyymmmvsRobotI-test-0 ROUND 1 TimeoutException when receive BLACK step: 3 time!
+2016-05-17 11:10:58 ERROR TestServiceRunnable:235 - java.net.SocketTimeoutException: Read timed out
+2016-05-17 11:10:58 ERROR TestServiceRunnable:236 - lllyyymmmvsRobotI-test-0 ROUND 1 TimeoutException when receive BLACK step: 4 time!
+2016-05-17 11:10:58  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 1 end
+2016-05-17 11:10:58  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 2 start
+2016-05-17 11:11:08 ERROR TestServiceRunnable:143 - java.net.SocketTimeoutException: Read timed out
+2016-05-17 11:11:08 ERROR TestServiceRunnable:144 - lllyyymmmvsRobotI-test-0 ROUND 2 TimeoutException when receive RED step: 1 time!
+2016-05-17 11:11:18 ERROR TestServiceRunnable:151 - java.net.SocketTimeoutException: Read timed out
+2016-05-17 11:11:18 ERROR TestServiceRunnable:152 - lllyyymmmvsRobotI-test-0 ROUND 2 TimeoutException when receive RED step: 2 time!
+2016-05-17 11:11:28 ERROR TestServiceRunnable:151 - java.net.SocketTimeoutException: Read timed out
+2016-05-17 11:11:28 ERROR TestServiceRunnable:152 - lllyyymmmvsRobotI-test-0 ROUND 2 TimeoutException when receive RED step: 3 time!
+2016-05-17 11:11:38 ERROR TestServiceRunnable:151 - java.net.SocketTimeoutException: Read timed out
+2016-05-17 11:11:38 ERROR TestServiceRunnable:152 - lllyyymmmvsRobotI-test-0 ROUND 2 TimeoutException when receive RED step: 4 time!
+2016-05-17 11:11:38  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 2 end
+2016-05-17 11:11:38  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-0 game over
+2016-05-17 11:11:38  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-0 result save completed!
+2016-05-17 11:11:38  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-0 record save completed!
+2016-05-17 11:13:10  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-1 begin!
+2016-05-17 11:13:10  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 0 start
+2016-05-17 11:13:11  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 0 end
+2016-05-17 11:13:11  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 1 start
+2016-05-17 11:13:12  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 1 end
+2016-05-17 11:13:12  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 2 start
+2016-05-17 11:13:13  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 2 end
+2016-05-17 11:13:13  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-1 game over
+2016-05-17 11:13:13  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-1 result save completed!
+2016-05-17 11:13:13  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-1 record save completed!
+2016-05-17 11:14:13  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-2 begin!
+2016-05-17 11:14:13  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 0 start
+2016-05-17 11:14:17 ERROR TestServiceRunnable:273 - java.net.SocketException: Software caused connection abort: socket write error
+2016-05-17 11:14:17 ERROR TestServiceRunnable:316 - java.net.SocketException: Software caused connection abort: socket write error
+2016-05-17 11:14:17  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 0 end
+2016-05-17 11:14:17 ERROR TestServiceRunnable:340 - java.net.SocketException: Software caused connection abort: socket write error
+2016-05-17 11:14:17  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-2 game over
+2016-05-17 11:14:17  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-3 begin!
+2016-05-17 11:14:17  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-3 round 0 start
+2016-05-17 11:14:17  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-2 result save completed!
+2016-05-17 11:14:17  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-2 record save completed!
+2016-05-17 11:14:17 ERROR TestServiceRunnable:126 - java.net.SocketException: Socket Closed
+2016-05-17 11:14:17 ERROR TestServiceRunnable:127 - lllyyymmmvsRobotI-test-3 ROUND 0 Unkown Exception when synchronize red round!
+2016-05-17 11:14:17 ERROR TestServiceRunnable:316 - java.lang.NullPointerException
+2016-05-17 11:14:17  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-3 round 0 end
+2016-05-17 11:14:17 ERROR TestServiceRunnable:340 - java.lang.NullPointerException
+2016-05-17 11:14:17  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-3 game over
+2016-05-17 11:14:17  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-3 result save completed!
+2016-05-17 11:14:17  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-3 record save completed!
+2016-05-17 11:22:10  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-0 begin!
+2016-05-17 11:22:10  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 0 start
+2016-05-17 11:22:12  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 0 end
+2016-05-17 11:22:12  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 1 start
+2016-05-17 11:22:14  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 1 end
+2016-05-17 11:22:14  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 2 start
+2016-05-17 11:22:16  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 2 end
+2016-05-17 11:22:16  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-0 game over
+2016-05-17 11:22:16  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-0 result save completed!
+2016-05-17 11:22:16  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-0 record save completed!
+2016-05-17 11:22:27  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-1 begin!
+2016-05-17 11:22:27  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 0 start
+2016-05-17 11:22:29  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 0 end
+2016-05-17 11:22:29  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 1 start
+2016-05-17 11:22:31  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 1 end
+2016-05-17 11:22:31  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 2 start
+2016-05-17 11:22:34  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 2 end
+2016-05-17 11:22:34  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-1 game over
+2016-05-17 11:22:34  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-1 result save completed!
+2016-05-17 11:22:34  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-1 record save completed!
+2016-05-17 11:22:38  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-2 begin!
+2016-05-17 11:22:38  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 0 start
+2016-05-17 11:22:41  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 0 end
+2016-05-17 11:22:41  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 1 start
+2016-05-17 11:22:43  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 1 end
+2016-05-17 11:22:43  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 2 start
+2016-05-17 11:22:45  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 2 end
+2016-05-17 11:22:45  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-2 game over
+2016-05-17 11:22:45  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-2 result save completed!
+2016-05-17 11:22:45  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-2 record save completed!
+2016-05-17 11:23:18  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-3 begin!
+2016-05-17 11:23:18  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-3 round 0 start
+2016-05-17 11:23:19  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-3 round 0 end
+2016-05-17 11:23:19  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-3 round 1 start
+2016-05-17 11:23:20  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-3 round 1 end
+2016-05-17 11:23:20  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-3 round 2 start
+2016-05-17 11:23:20  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-3 round 2 end
+2016-05-17 11:23:20  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-3 game over
+2016-05-17 11:23:20  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-3 result save completed!
+2016-05-17 11:23:20  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-3 record save completed!
+2016-05-17 11:23:21  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-4 begin!
+2016-05-17 11:23:21  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-4 round 0 start
+2016-05-17 11:23:22  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-4 round 0 end
+2016-05-17 11:23:22  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-4 round 1 start
+2016-05-17 11:23:22  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-4 round 1 end
+2016-05-17 11:23:22  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-4 round 2 start
+2016-05-17 11:23:23  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-4 round 2 end
+2016-05-17 11:23:23  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-4 game over
+2016-05-17 11:23:23  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-4 result save completed!
+2016-05-17 11:23:23  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-4 record save completed!
+2016-05-17 11:25:01  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-0 begin!
+2016-05-17 11:25:01  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 0 start
+2016-05-17 11:25:16 ERROR TestServiceRunnable:164 - java.net.SocketException: Connection reset
+2016-05-17 11:25:16 ERROR TestServiceRunnable:165 - lllyyymmmvsRobotI-test-0 ROUND 0 Unkown Exception when receive RED step!
+2016-05-17 11:25:16 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-17 11:25:16  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 0 end
+2016-05-17 11:25:16  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 1 start
+2016-05-17 11:25:16 ERROR TestServiceRunnable:101 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-17 11:25:16 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-17 11:25:16  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 1 end
+2016-05-17 11:25:16 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-17 11:25:16  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-0 game over
+2016-05-17 11:25:16  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-0 result save completed!
+2016-05-17 11:25:16  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-0 record save completed!
+2016-05-17 11:25:57  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-0 begin!
+2016-05-17 11:25:57  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 0 start
+2016-05-17 11:26:07  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 0 end
+2016-05-17 11:26:07  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 1 start
+2016-05-17 11:26:11 ERROR TestServiceRunnable:248 - java.net.SocketException: Connection reset
+2016-05-17 11:26:11 ERROR TestServiceRunnable:249 - lllyyymmmvsRobotI-test-0 ROUND 1 Unkown Exception when receive BLACK step!
+2016-05-17 11:26:11 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-17 11:26:11  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 1 end
+2016-05-17 11:26:11  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 2 start
+2016-05-17 11:26:11 ERROR TestServiceRunnable:93 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-17 11:26:11 ERROR TestServiceRunnable:316 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-17 11:26:11  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 2 end
+2016-05-17 11:26:11 ERROR TestServiceRunnable:340 - java.net.SocketException: Connection reset by peer: socket write error
+2016-05-17 11:26:11  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-0 game over
+2016-05-17 11:26:11  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-0 result save completed!
+2016-05-17 11:26:11  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-0 record save completed!
+2016-05-17 11:26:22  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-0 begin!
+2016-05-17 11:26:22  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 0 start
+2016-05-17 11:26:23  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 0 end
+2016-05-17 11:26:23  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 1 start
+2016-05-17 11:26:24  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 1 end
+2016-05-17 11:26:24  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 2 start
+2016-05-17 11:26:25  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 2 end
+2016-05-17 11:26:25  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-0 game over
+2016-05-17 11:26:25  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-0 result save completed!
+2016-05-17 11:26:25  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-0 record save completed!
+2016-05-17 11:26:49  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-0 begin!
+2016-05-17 11:26:49  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 0 start
+2016-05-17 11:26:51  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 0 end
+2016-05-17 11:26:51  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 1 start
+2016-05-17 11:26:52  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 1 end
+2016-05-17 11:26:52  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 2 start
+2016-05-17 11:26:54  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 2 end
+2016-05-17 11:26:54  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-0 game over
+2016-05-17 11:26:54  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-0 result save completed!
+2016-05-17 11:26:54  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-0 record save completed!
+2016-05-17 11:28:18  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-0 begin!
+2016-05-17 11:28:18  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 0 start
+2016-05-17 11:28:19  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 0 end
+2016-05-17 11:28:19  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 1 start
+2016-05-17 11:28:20  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 1 end
+2016-05-17 11:28:20  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 2 start
+2016-05-17 11:28:22  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 2 end
+2016-05-17 11:28:22  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-0 game over
+2016-05-17 11:28:22  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-0 result save completed!
+2016-05-17 11:28:22  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-0 record save completed!
+2016-05-17 11:32:12  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-0 begin!
+2016-05-17 11:32:12  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 0 start
+2016-05-17 11:32:13  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 0 end
+2016-05-17 11:32:13  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 1 start
+2016-05-17 11:32:15  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 1 end
+2016-05-17 11:32:15  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 2 start
+2016-05-17 11:32:16  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 2 end
+2016-05-17 11:32:16  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-0 game over
+2016-05-17 11:32:16  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-0 result save completed!
+2016-05-17 11:32:16  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-0 record save completed!
+2016-05-17 11:32:21  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-1 begin!
+2016-05-17 11:32:21  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 0 start
+2016-05-17 11:32:22  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 0 end
+2016-05-17 11:32:22  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 1 start
+2016-05-17 11:32:23  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 1 end
+2016-05-17 11:32:23  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 2 start
+2016-05-17 11:32:25  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 2 end
+2016-05-17 11:32:25  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-1 game over
+2016-05-17 11:32:25  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-1 result save completed!
+2016-05-17 11:32:25  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-1 record save completed!
+2016-05-17 11:32:26  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-2 begin!
+2016-05-17 11:32:26  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 0 start
+2016-05-17 11:32:28  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 0 end
+2016-05-17 11:32:28  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 1 start
+2016-05-17 11:32:29  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 1 end
+2016-05-17 11:32:29  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 2 start
+2016-05-17 11:32:31  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 2 end
+2016-05-17 11:32:31  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-2 game over
+2016-05-17 11:32:31  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-2 result save completed!
+2016-05-17 11:32:31  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-2 record save completed!
+2016-05-17 11:32:51  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-3 begin!
+2016-05-17 11:32:51  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-3 round 0 start
+2016-05-17 11:33:01  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-3 round 0 end
+2016-05-17 11:33:01  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-3 round 1 start
+2016-05-17 11:33:08  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-3 round 1 end
+2016-05-17 11:33:08  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-3 round 2 start
+2016-05-17 11:33:17  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-3 round 2 end
+2016-05-17 11:33:17  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-3 game over
+2016-05-17 11:33:17  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-3 result save completed!
+2016-05-17 11:33:17  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-3 record save completed!
+2016-05-17 11:33:35  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-4 begin!
+2016-05-17 11:33:35  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-4 round 0 start
+2016-05-17 11:33:37  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-4 round 0 end
+2016-05-17 11:33:37  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-4 round 1 start
+2016-05-17 11:33:39  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-4 round 1 end
+2016-05-17 11:33:39  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-4 round 2 start
+2016-05-17 11:33:42  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-4 round 2 end
+2016-05-17 11:33:42  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-4 game over
+2016-05-17 11:33:42  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-4 result save completed!
+2016-05-17 11:33:42  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-4 record save completed!
+2016-05-17 11:33:46  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-5 begin!
+2016-05-17 11:33:46  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-5 round 0 start
+2016-05-17 11:33:48  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-5 round 0 end
+2016-05-17 11:33:48  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-5 round 1 start
+2016-05-17 11:33:50  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-5 round 1 end
+2016-05-17 11:33:50  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-5 round 2 start
+2016-05-17 11:33:53  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-5 round 2 end
+2016-05-17 11:33:53  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-5 game over
+2016-05-17 11:33:53  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-5 result save completed!
+2016-05-17 11:33:53  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-5 record save completed!
+2016-05-17 12:44:38  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-0 begin!
+2016-05-17 12:44:38  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 0 start
+2016-05-17 12:44:53  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 0 end
+2016-05-17 12:44:53  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 1 start
+2016-05-17 12:45:18  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 1 end
+2016-05-17 12:45:18  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 2 start
+2016-05-17 12:45:35  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 2 end
+2016-05-17 12:45:35  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-0 game over
+2016-05-17 12:45:35  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-0 result save completed!
+2016-05-17 12:45:35  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-0 record save completed!
+2016-05-17 12:48:20  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-1 begin!
+2016-05-17 12:48:20  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 0 start
+2016-05-17 12:48:24  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 0 end
+2016-05-17 12:48:24  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 1 start
+2016-05-17 12:48:26  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 1 end
+2016-05-17 12:48:26  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 2 start
+2016-05-17 12:48:29  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 2 end
+2016-05-17 12:48:29  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-1 game over
+2016-05-17 12:48:29  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-1 result save completed!
+2016-05-17 12:48:29  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-1 record save completed!
+2016-05-17 12:48:33  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-2 begin!
+2016-05-17 12:48:33  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 0 start
+2016-05-17 12:48:35  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 0 end
+2016-05-17 12:48:35  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 1 start
+2016-05-17 12:48:37  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 1 end
+2016-05-17 12:48:37  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 2 start
+2016-05-17 12:48:41  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 2 end
+2016-05-17 12:48:41  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-2 game over
+2016-05-17 12:48:41  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-2 result save completed!
+2016-05-17 12:48:41  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-2 record save completed!
+2016-05-17 15:59:06  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-0 begin!
+2016-05-17 15:59:06  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 0 start
+2016-05-17 15:59:07  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 0 end
+2016-05-17 15:59:07  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 1 start
+2016-05-17 15:59:09  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 1 end
+2016-05-17 15:59:09  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-0 round 2 start
+2016-05-17 15:59:10  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-0 round 2 end
+2016-05-17 15:59:10  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-0 game over
+2016-05-17 15:59:10  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-0 result save completed!
+2016-05-17 15:59:10  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-0 record save completed!
+2016-05-17 15:59:19  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-1 begin!
+2016-05-17 15:59:19  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 0 start
+2016-05-17 15:59:20  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 0 end
+2016-05-17 15:59:20  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 1 start
+2016-05-17 15:59:21  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 1 end
+2016-05-17 15:59:21  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-1 round 2 start
+2016-05-17 15:59:22  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-1 round 2 end
+2016-05-17 15:59:22  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-1 game over
+2016-05-17 15:59:22  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-1 result save completed!
+2016-05-17 15:59:22  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-1 record save completed!
+2016-05-17 15:59:23  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-2 begin!
+2016-05-17 15:59:23  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 0 start
+2016-05-17 15:59:24  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 0 end
+2016-05-17 15:59:24  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 1 start
+2016-05-17 15:59:25  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 1 end
+2016-05-17 15:59:25  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-2 round 2 start
+2016-05-17 15:59:26  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-2 round 2 end
+2016-05-17 15:59:26  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-2 game over
+2016-05-17 15:59:26  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-2 result save completed!
+2016-05-17 15:59:27  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-2 record save completed!
+2016-05-17 15:59:27  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-3 begin!
+2016-05-17 15:59:27  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-3 round 0 start
+2016-05-17 15:59:28  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-3 round 0 end
+2016-05-17 15:59:28  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-3 round 1 start
+2016-05-17 15:59:29  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-3 round 1 end
+2016-05-17 15:59:29  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-3 round 2 start
+2016-05-17 15:59:30  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-3 round 2 end
+2016-05-17 15:59:30  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-3 game over
+2016-05-17 15:59:30  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-3 result save completed!
+2016-05-17 15:59:31  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-3 record save completed!
+2016-05-17 15:59:32  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-4 begin!
+2016-05-17 15:59:32  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-4 round 0 start
+2016-05-17 15:59:33  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-4 round 0 end
+2016-05-17 15:59:33  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-4 round 1 start
+2016-05-17 15:59:34  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-4 round 1 end
+2016-05-17 15:59:34  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-4 round 2 start
+2016-05-17 15:59:35  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-4 round 2 end
+2016-05-17 15:59:35  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-4 game over
+2016-05-17 15:59:35  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-4 result save completed!
+2016-05-17 15:59:35  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-4 record save completed!
+2016-05-17 15:59:37  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-5 begin!
+2016-05-17 15:59:37  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-5 round 0 start
+2016-05-17 15:59:37  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-5 round 0 end
+2016-05-17 15:59:37  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-5 round 1 start
+2016-05-17 15:59:39  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-5 round 1 end
+2016-05-17 15:59:39  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-5 round 2 start
+2016-05-17 15:59:40  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-5 round 2 end
+2016-05-17 15:59:40  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-5 game over
+2016-05-17 15:59:40  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-5 result save completed!
+2016-05-17 15:59:40  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-5 record save completed!
+2016-05-17 15:59:40  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-6 begin!
+2016-05-17 15:59:40  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-6 round 0 start
+2016-05-17 15:59:42  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-6 round 0 end
+2016-05-17 15:59:42  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-6 round 1 start
+2016-05-17 15:59:43  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-6 round 1 end
+2016-05-17 15:59:43  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-6 round 2 start
+2016-05-17 15:59:44  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-6 round 2 end
+2016-05-17 15:59:44  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-6 game over
+2016-05-17 15:59:44  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-6 result save completed!
+2016-05-17 15:59:44  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-6 record save completed!
+2016-05-17 15:59:45  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-7 begin!
+2016-05-17 15:59:45  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-7 round 0 start
+2016-05-17 15:59:46  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-7 round 0 end
+2016-05-17 15:59:46  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-7 round 1 start
+2016-05-17 15:59:48  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-7 round 1 end
+2016-05-17 15:59:48  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-7 round 2 start
+2016-05-17 15:59:49  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-7 round 2 end
+2016-05-17 15:59:49  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-7 game over
+2016-05-17 15:59:49  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-7 result save completed!
+2016-05-17 15:59:49  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-7 record save completed!
+2016-05-17 15:59:50  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-8 begin!
+2016-05-17 15:59:50  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-8 round 0 start
+2016-05-17 15:59:51  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-8 round 0 end
+2016-05-17 15:59:51  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-8 round 1 start
+2016-05-17 15:59:52  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-8 round 1 end
+2016-05-17 15:59:52  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-8 round 2 start
+2016-05-17 15:59:53  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-8 round 2 end
+2016-05-17 15:59:53  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-8 game over
+2016-05-17 15:59:53  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-8 result save completed!
+2016-05-17 15:59:53  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-8 record save completed!
+2016-05-17 15:59:56  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-9 begin!
+2016-05-17 15:59:56  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-9 round 0 start
+2016-05-17 15:59:57  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-9 round 0 end
+2016-05-17 15:59:57  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-9 round 1 start
+2016-05-17 15:59:58  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-9 round 1 end
+2016-05-17 15:59:58  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-9 round 2 start
+2016-05-17 15:59:59  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-9 round 2 end
+2016-05-17 15:59:59  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-9 game over
+2016-05-17 15:59:59  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-9 result save completed!
+2016-05-17 15:59:59  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-9 record save completed!
+2016-05-17 16:00:00  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-10 begin!
+2016-05-17 16:00:00  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-10 round 0 start
+2016-05-17 16:00:01  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-10 round 0 end
+2016-05-17 16:00:01  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-10 round 1 start
+2016-05-17 16:00:02  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-10 round 1 end
+2016-05-17 16:00:02  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-10 round 2 start
+2016-05-17 16:00:03  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-10 round 2 end
+2016-05-17 16:00:03  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-10 game over
+2016-05-17 16:00:03  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-10 result save completed!
+2016-05-17 16:00:03  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-10 record save completed!
+2016-05-17 16:00:09  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-11 begin!
+2016-05-17 16:00:09  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-11 round 0 start
+2016-05-17 16:00:10  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-11 round 0 end
+2016-05-17 16:00:10  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-11 round 1 start
+2016-05-17 16:00:11  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-11 round 1 end
+2016-05-17 16:00:11  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-11 round 2 start
+2016-05-17 16:00:12  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-11 round 2 end
+2016-05-17 16:00:12  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-11 game over
+2016-05-17 16:00:12  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-11 result save completed!
+2016-05-17 16:00:12  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-11 record save completed!
+2016-05-17 16:00:14  INFO TestServiceRunnable:59 - lllyyymmmvsRobotI-test-12 begin!
+2016-05-17 16:00:14  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-12 round 0 start
+2016-05-17 16:00:15  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-12 round 0 end
+2016-05-17 16:00:15  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-12 round 1 start
+2016-05-17 16:00:16  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-12 round 1 end
+2016-05-17 16:00:16  INFO TestServiceRunnable:69 - lllyyymmmvsRobotI-test-12 round 2 start
+2016-05-17 16:00:17  INFO TestServiceRunnable:318 - lllyyymmmvsRobotI-test-12 round 2 end
+2016-05-17 16:00:17  INFO TestServiceRunnable:342 - lllyyymmmvsRobotI-test-12 game over
+2016-05-17 16:00:17  INFO TestServiceRunnable:349 - lllyyymmmvsRobotI-test-12 result save completed!
+2016-05-17 16:00:17  INFO TestServiceRunnable:354 - lllyyymmmvsRobotI-test-12 record save completed!

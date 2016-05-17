@@ -97,6 +97,8 @@ void ReviewDialog::on_backButton_clicked()
 
 void ReviewDialog::on_roundBox_currentTextChanged(const QString &text)
 {
+    if(record.size() == 0)
+        return;
     int round = text.toInt();
     QIntValidator v(0, record[round].boards.size() - 1, this);
     ui->numLine->setValidator(&v);

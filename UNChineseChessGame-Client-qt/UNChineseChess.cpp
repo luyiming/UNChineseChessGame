@@ -12,6 +12,7 @@
 #include <QDebug>
 #include <QFile>
 #include <QTime>
+#include <QtNetwork/QTcpSocket>
 
 #define ROWS 4
 #define COLS 4
@@ -24,15 +25,27 @@ const int mc2[] = {0, 2, 0, -2};
 
 QList<int> movemsg;
 
+Game::Game()
+{
+    tcpSocket = new QTcpSocket(this);
+    connect(tcpSocket, &QTcpSocket::readyRead, this, &Game::receiveMessage);
+    connect(tcpSocket,SIGNAL(error(QAbstractSocket::SocketError)),
+            this,SLOT(displayError(QAbstractSocket::SocketError)));
+}
+
 void Game::authorize(const char *id, const char *pass) {
-	connectServer();
+    qDebug() << "Connect server: " << SERVER_IP << ":" << SERVER_PORT;
+    tcpSocket->abort();
+    tcpSocket->connectToHost(QString(SERVER_IP), SERVER_PORT);
+
     emit statusChanged(QString("Authorize ") + id + "\n");
-	char msgBuf[BUFSIZE];
-	memset(msgBuf, 0, BUFSIZE);
+    char msgBuf[BUFSIZE + 1];
+    memset(msgBuf, 0, BUFSIZE + 1);
 	msgBuf[0] = 'A';
 	memcpy(&msgBuf[1], id, 9);
     memcpy(&msgBuf[10], pass, 6);
-	sendMsg(msgBuf);   
+    sendMessage(msgBuf);
+    b_roundStart = true;
 }
 
 void Game::gameStart() {
@@ -80,20 +93,20 @@ void Game::roundStart(int round) {
     }
     ownColor = oppositeColor = -1;
 
-    recvMsg();
     switch (recvBuf[1]) {
         case 'R':
             ownColor = 0;
             oppositeColor = 1;
-            sendMsg("BR");
+            sendMessage("BR");
             break;
         case 'B':
             ownColor = 1;
             oppositeColor = 0;
-            sendMsg("BB");
+            sendMessage("BB");
             break;
     }
 
+    curPlayColor = 0;
     emit roundChanged(round, ownColor);
 
 }
@@ -133,12 +146,10 @@ void Game::roundOver(int round) {
         }
     }
     ownColor = oppositeColor = -1;
-    curRound++;
 }
 
 int Game::observe() {
     int rtn = 0;
-    recvMsg();
     switch (recvBuf[0]) {
         case 'R':
         {
@@ -223,7 +234,8 @@ void Game::reversePiece(int row, int col) {
 	msg[3] = '0' + col;
 	msg[4] = '0' + row;
 	msg[5] = '0' + col;
-	sendMsg(msg);
+    //sendMsg(msg);
+    sendMessage(msg);
 }
 
 void Game::movePiece(int srcRow, int srcCol, int desRow, int desCol) {
@@ -234,11 +246,13 @@ void Game::movePiece(int srcRow, int srcCol, int desRow, int desCol) {
 	msg[3] = '0' + srcCol;
 	msg[4] = '0' + desRow;
 	msg[5] = '0' + desCol;
-	sendMsg(msg);
+    //sendMsg(msg);
+    sendMessage(msg);
 }
 
 void Game::noStep() {
-    sendMsg("SN");
+    //sendMsg("SN");
+    sendMessage("SN");
 }
 
 void Game::saveChessBoard() {
@@ -444,7 +458,6 @@ void Game::step() {
 
 int Game::alphaBetaMax(Board& b, int depth, int alpha, int beta)
 {
-   qDebug() << "max";
    if (depth == 0)
        return evaluate(b);
    QList<Board> moves;
@@ -458,7 +471,7 @@ int Game::alphaBetaMax(Board& b, int depth, int alpha, int beta)
    for(int i = 0; i < moves.size(); ++i)
    {
       int score = alphaBetaMin(moves[i], depth - 1, alpha, beta);
-      qDebug() << "score:" << score;
+      //qDebug() << "score:" << score;
       if(score >= beta)
          return beta;   //beta-cutoff
       if(score > alpha)
@@ -466,7 +479,7 @@ int Game::alphaBetaMax(Board& b, int depth, int alpha, int beta)
           if(depth == 4)
           {
              movemsg = msg[i];
-             qDebug() << "score:" << score;
+             //qDebug() << "score:" << score;
           }
          alpha = score; // alpha acts like max in MiniMax
       }
@@ -691,23 +704,8 @@ int Game::evaluate(Board& b)
 
 int Game::tryMove(int r, int c)
 {
-    if(ownColor == 1)
-    {
-        if (observe() > 0)
-        {
-            roundOver(curRound);
-            if(curRound == ROUNDS)
-            {
-                gameOver();
-                close();
-                emit statusChanged("Close Socket\n");
-            }
-            else
-                roundStart(curRound);
-            return 1;
-        }
-        saveChessBoard();
-    }
+    if(curPlayColor != ownColor)
+        return 0;
     static int srcRow = -1, srcCol = -1, desRow = -1, desCol = -1;
     if(r == -1 && c == -1)
     {
@@ -733,44 +731,13 @@ int Game::tryMove(int r, int c)
         isSelected = false;
         movePiece(srcRow, srcCol, desRow, desCol);
     }
-    if(ownColor == 0)
-    {
-        if (observe() > 0)
-        {
-            roundOver(curRound);
-            if(curRound == ROUNDS)
-            {
-                gameOver();
-                close();
-                emit statusChanged("Close Socket\n");
-            }
-            else
-                roundStart(curRound);
-            return 1;
-        }
-        saveChessBoard();
-    }
-    if (observe() > 0)
-    {
-        roundOver(curRound);
-        if(curRound == ROUNDS)
-        {
-            gameOver();
-            close();
-            emit statusChanged("Close Socket\n");
-        }
-        else
-            roundStart(curRound);
-        return 1;
-    }
-    saveChessBoard();
     return 1;
 }
 
 void Game::minimaxStep()
 {
     movemsg.clear();
-    int abscore = alphaBetaMax(board, 6, -100000, 100000);
+    int abscore = alphaBetaMax(board, 4, -100000, 100000);
     int score = -100000;
     int srcRow = -1, srcCol = -1;
     for (int r = 0; r < ROWS; r++)
@@ -826,110 +793,81 @@ void Game::minimaxStep()
     }
 }
 
-void Game::minimax()
+void Game::receiveMessage()
 {
-    if(ownColor == 1)
-    {
-        if (observe() > 0)
-        {
-            roundOver(curRound);
-            if(curRound == ROUNDS)
-            {
-                gameOver();
-                close();
-                emit statusChanged("Close Socket\n");
-            }
-            else
-                roundStart(curRound);
-            return;
-        }
-        saveChessBoard();
-    }
-    movemsg.clear();
-    int score1 = alphaBetaMax(board, 4, -100000, 100000);
-    int score = -100000;
-    int srcRow = -1, srcCol = -1;
-    for (int r = 0; r < ROWS; r++)
-    {
-        for (int c = 0; c < COLS; c++)
-        {
-            if(board[r][c].empty)
-                continue;
-            if(!board[r][c].valid)
-            {
-                for(int i = 0; i < 4; ++i)
-                {
-                    int nr = r + mr2[i];
-                    int nc = c + mc2[i];
-                    if(nr < 0 || nr >= ROWS || nc < 0 || nc >= COLS)
-                        continue;
-                    if(board[nr][nc].piece == 1 && board[nr][nc].color == ownColor)
-                    {
-                        int tempScore = evaluate(board) + 1;
-                        if(tempScore > score)
-                        {
-                            score = tempScore;
-                            srcRow = r;
-                            srcCol = c;
-                        }
-                    }
-                }
-                int tempScore = evaluate(board);
-                if(tempScore > score)
-                {
-                    score = tempScore;
-                    srcRow = r;
-                    srcCol = c;
-                }
-            }
-        }
-    }
-    if(score > score1)
-    {
-        reversePiece(srcRow, srcCol);
-        qDebug() << "reverse:" << srcRow << srcCol;
-    }
-    else if(movemsg.size() != 0)
-    {
-        movePiece(movemsg.at(0), movemsg.at(1), movemsg.at(2), movemsg.at(3));
-        qDebug() << "move:" << movemsg.at(0) << movemsg.at(1) << movemsg.at(2) << movemsg.at(3);
-    }
-    else
-    {
-        qDebug() << movemsg.size();
-        qDebug() << "nostep";
-        noStep();
-    }
+    qDebug() << "tcp size:" << tcpSocket->size();
 
-    if(ownColor == 0)
+    while(tcpSocket->size() != 0)
     {
-        if (observe() > 0)
+        memset(recvBuf, 0, BUFSIZE);
+        tcpSocket->read(recvBuf, BUFSIZE);
+        qDebug() << "receive msg:" << recvBuf;
+        if(b_roundStart)
         {
-            roundOver(curRound);
-            if(curRound == ROUNDS)
-            {
-                gameOver();
-                close();
-                emit statusChanged("Close Socket\n");
-            }
-            else
-                roundStart(curRound);
-        }
-        saveChessBoard();
-    }
-
-    if (observe() > 0)
-    {
-        roundOver(curRound);
-        if(curRound == ROUNDS)
-        {
-            gameOver();
-            close();
-            emit statusChanged("Close Socket\n");
+            roundStart(curRound);
+            b_roundStart = false;
         }
         else
-            roundStart(curRound);
-        return;
+        {
+            curPlayColor = (curPlayColor + 1) % 2;
+            if(observe() > 0)
+            {
+                curPlayColor = -1;
+                roundOver(curRound);
+                if(curRound == 2)
+                {
+                    gameOver();
+                    tcpSocket->close();
+                    emit statusChanged("Close socket");
+                    curRound = 0;
+                    return;
+                }
+                else
+                {
+                    ++curRound;
+                    b_roundStart = true;
+                }
+            }
+            else
+                saveChessBoard();
+
+        }
+        emit boardChanged();
+        if((curPlayColor == ownColor) && b_aimove)
+        {
+            //step();
+            minimaxStep();
+        }
     }
-    saveChessBoard();
+
 }
+
+int Game::sendMessage(const char* msg)
+{
+    int len = strlen(msg);
+    len = len < BUFSIZE ? len : BUFSIZE;
+    memset(sendBuf, 0, BUFSIZE);
+    memcpy(sendBuf, msg, len);
+    tcpSocket->write(sendBuf, BUFSIZE);
+    qDebug() << "sendmsg:" <<msg;
+    return 1;
+}
+
+void Game::displayError(QAbstractSocket::SocketError)
+{
+    qDebug() << tcpSocket->errorString();
+}
+
+int Game::connectToServer()
+{
+    qDebug() << "Connect server: " << SERVER_IP << ":" << SERVER_PORT;
+    tcpSocket->abort();
+    tcpSocket->connectToHost(QString(SERVER_IP), SERVER_PORT);
+    return 1;
+}
+
+void Game::setAiMode(bool mode)
+{
+    b_aimove = mode;
+}
+

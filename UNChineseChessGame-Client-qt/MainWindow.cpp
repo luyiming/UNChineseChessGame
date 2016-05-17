@@ -33,6 +33,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     this->setMouseTracking(true);
+    this->setWindowIcon(QIcon(":windowIcon"));
 
     ui->idLine->setText(ID);
     ui->ipLine->setText(SERVER_IP);
@@ -92,7 +93,10 @@ MainWindow::MainWindow(QWidget *parent) :
         else
             this->ui->roleLabel->setText("黑色");
     });
+
+    connect(game, &Game::boardChanged, [&](){this->update();});
 }
+
 
 void MainWindow::countDown(bool restart)
 {
@@ -117,7 +121,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::paintEvent(QPaintEvent *)
 {
-    const int sx = 80, sy = 80; //start x, start y
+    const int sx = 80, sy = 100; //start x, start y
     const int cell_w = 110, offset = 18;    //cell_width
 
     QPainter p(this);
@@ -204,14 +208,14 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
 
 void MainWindow::on_connectButton_clicked()
 {
-    char *id_ = ui->idLine->text().toLatin1().data();
-    char *password_ = ui->pwdLine->text().toLatin1().data();
+    char id_[100] = {0};
+    char password_[100] = {0};
+    memcpy(id_, ui->idLine->text().toStdString().data(), ui->idLine->text().size());
+    memcpy(password_, ui->pwdLine->text().toStdString().data(), ui->pwdLine->text().size());
 
     game->authorize(id_, password_);
-    //game->authorize(ID, PASSWORD);
-    game->roundStart(0);
-    update();
-    //ui->connectButton->setDisabled(true);
+//    //game->authorize(ID, PASSWORD);
+
 }
 
 void MainWindow::addInfo(QString s)
@@ -229,13 +233,19 @@ void MainWindow::on_quitButton_clicked()
 
 void MainWindow::on_aiButton_clicked()
 {
-    game->gameStart();
+    game->setAiMode(true);
+    char id_[100] = {0};
+    char password_[100] = {0};
+    memcpy(id_, ui->idLine->text().toStdString().data(), ui->idLine->text().size());
+    memcpy(password_, ui->pwdLine->text().toStdString().data(), ui->pwdLine->text().size());
+
+    game->authorize(id_, password_);
 }
 
 void MainWindow::on_nextButton_clicked()
 {
     //game->step();
-    game->minimax();
+    game->minimaxStep();
 
     countDownTimer->stop();
     countDown(true);
@@ -251,3 +261,7 @@ void MainWindow::on_reviewButton_clicked()
     connect(reviewDialog, &ReviewDialog::signal_review, [&](Board board){game->setBoard(board); update();});
     reviewDialog->show();
 }
+
+
+
+

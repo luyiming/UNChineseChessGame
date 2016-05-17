@@ -16,6 +16,7 @@ class Game : public QObject
 signals:
     void statusChanged(QString msg);
     void roundChanged(int round, int ownColor);
+    void boardChanged();
 
 public:
 
@@ -27,6 +28,7 @@ public:
     QList<Record> record;
 
 public:
+    Game();
     void authorize(const char *id, const char *pass);
     void gameStart();
     void gameOver();
@@ -46,9 +48,20 @@ public:
     int alphaBetaMin(Board& b, int depth, int alpha, int beta);
     void makeMoves(Board& b, int color, QList<Board>& moves, QList<QList<int> > &msg);
     int evaluate(Board& b);
-    void minimax();
     void minimaxStep();
     void reset();
+
+    void setAiMode(bool mode);
+private:
+    void receiveMessage();
+
+    void displayError(QAbstractSocket::SocketError);
+    int connectToServer();
+    int sendMessage(const char* msg);
+    bool b_roundStart = false;
+    bool b_aimove = false;
+    int curPlayColor = -1;
+    QTcpSocket *tcpSocket;
 };
 
 #endif // MAINWINDOW_H

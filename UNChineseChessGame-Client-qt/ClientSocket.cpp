@@ -52,33 +52,33 @@ int connectServer()
 
 int recvMsg()
 {
-	int rtn = 0, err = 0;
-	memset(recvBuf, 0, BUFSIZE);
-	err = recv(client, recvBuf, BUFSIZE, 0);
-	if (err < 0)
-	{
+    int rtn = 0, err = 0;
+    memset(recvBuf, 0, BUFSIZE);
+    err = recv(client, recvBuf, BUFSIZE, 0);
+    if (err < 0)
+    {
         qDebug() << "Receive msg failed with error: " << err;
-		rtn = 1;
-		return rtn;
-	}
-	return rtn;
+        rtn = 1;
+        return rtn;
+    }
+    return rtn;
 }
 
 int sendMsg(const char* msg)
 {
-	int rtn = 0, err = 0;
-	int len = strlen(msg);
-	len = len < BUFSIZE ? len : BUFSIZE;
-	memset(sendBuf, 0, BUFSIZE);
-	memcpy(sendBuf, msg, len);
-	err = send(client, sendBuf, BUFSIZE, 0);
-	if (err < 0)
-	{
+    int rtn = 0, err = 0;
+    int len = strlen(msg);
+    len = len < BUFSIZE ? len : BUFSIZE;
+    memset(sendBuf, 0, BUFSIZE);
+    memcpy(sendBuf, msg, len);
+    err = send(client, sendBuf, BUFSIZE, 0);
+    if (err < 0)
+    {
         qDebug() << "Send msg failed with error: " << err;
-		rtn = 1;
-		return rtn;
-	}
-	return rtn;
+        rtn = 1;
+        return rtn;
+    }
+    return rtn;
 }
 
 void close()
@@ -90,46 +90,4 @@ void close()
     qDebug() << "Close socket";
 }
 
-void ClientSocket::ClientSocket()
-{
-    this->tcpSocket = new QTcpSocket(this);
-    connect(tcpSocket, &QTcpSocket::readyRead, this, &ClientSocket::recvMsg);
-    connect(tcpSocket,SIGNAL(error(QAbstractSocket::SocketError)),
-            this,SLOT(displayError(QAbstractSocket::SocketError)));
-}
 
-
-void ClientSocket::recvMsg()
-{
-    memset(recvBuf, 0, BUFSIZE);
-    tcpSocket->read(recvBuf, BUFSIZE);
-    qDebug() << recvBuf;
-}
-
-int ClientSocket::sendMsg(const char* msg)
-{
-    int len = strlen(msg);
-    len = len < BUFSIZE ? len : BUFSIZE;
-    memset(sendBuf, 0, BUFSIZE);
-    memcpy(sendBuf, msg, len);
-    tcpSocket->write(sendBuf, BUFSIZE);
-    qDebug() << sendBuf;
-}
-
-void ClientSocket::displayError(QAbstractSocket::SocketError)
-{
-    qDebug() << tcpSocket->errorString();
-}
-
-int ClientSocket::connectServer()
-{
-    qDebug() << "Connect server: " << SERVER_IP << ":" << SERVER_PORT;
-    tcpSocket->abort();
-    tcpSocket->connectToHost(QString(SERVER_IP), QString(SERVER_PORT));
-}
-
-void ClientSocket::close()
-{
-    tcpSocket->close();
-    qDebug() << "Close socket";
-}

@@ -26,5 +26,6 @@
         <file>src/background03.png</file>
         <file>src/chess/selected.png</file>
         <file alias="reviewBackground">src/background04.png</file>
+        <file alias="windowIcon">src/chess/wndIcon.png</file>
     </qresource>
 </RCC>
