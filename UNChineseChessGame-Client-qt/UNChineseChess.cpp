@@ -25,6 +25,8 @@ const int mc2[] = {0, 2, 0, -2};
 
 QList<int> movemsg;
 
+double factor = 0.68;
+
 Game::Game()
 {
     tcpSocket = new QTcpSocket(this);
@@ -34,9 +36,6 @@ Game::Game()
 }
 
 void Game::authorize(const char *id, const char *pass) {
-    qDebug() << "Connect server: " << SERVER_IP << ":" << SERVER_PORT;
-    tcpSocket->abort();
-    tcpSocket->connectToHost(QString(SERVER_IP), SERVER_PORT);
 
     emit statusChanged(QString("Authorize ") + id + "\n");
     char msgBuf[BUFSIZE + 1];
@@ -46,14 +45,13 @@ void Game::authorize(const char *id, const char *pass) {
     memcpy(&msgBuf[10], pass, 6);
     sendMessage(msgBuf);
     b_roundStart = true;
+    this->id_ = QString(id);
+    this->pwd_ = QString(pass);
 }
 
 void Game::gameStart() {
-    for (int r = 0; r < ROWS; r++) {
-        for (int c = 0; c < COLS; c++) {
-            board[r][c].reset();
-        }
-    }
+    board.reset();
+
     ownColor = oppositeColor = -1;
     curRound = 0;
 
@@ -69,9 +67,8 @@ void Game::gameStart() {
 }
 
 void Game::gameOver() {
-    saveToFile = true;
-    saveChessBoard();
-    saveToFile = false;
+    saveChessBoard(true);
+
     emit statusChanged("Game Over\n");
     for (int r = 0; r < ROWS; r++) {
         for (int c = 0; c < COLS; c++) {
@@ -86,11 +83,8 @@ void Game::gameOver() {
 void Game::roundStart(int round) {
     emit statusChanged(QString("Round ") + QString::number(round) + QString(" Start\n"));
 
-    for (int r = 0; r < ROWS; r++) {
-        for (int c = 0; c < COLS; c++) {
-            board[r][c].reset();
-        }
-    }
+    board.reset();
+
     ownColor = oppositeColor = -1;
 
     switch (recvBuf[1]) {
@@ -140,11 +134,7 @@ void Game::oneRound() {
 
 void Game::roundOver(int round) {
     emit statusChanged(QString("Round ") + round + QString(" Over\n"));
-    for (int r = 0; r < ROWS; r++) {
-        for (int c = 0; c < COLS; c++) {
-            board[r][c].reset();
-        }
-    }
+    board.reset();
     ownColor = oppositeColor = -1;
 }
 
@@ -162,6 +152,9 @@ int Game::observe() {
                             board[srcRow][srcCol].valid = true;
                             board[srcRow][srcCol].color = recvBuf[7] - '0';
                             board[srcRow][srcCol].piece = recvBuf[8] - '0';
+                            int clr = board[srcRow][srcCol].color;
+                            int pie = board[srcRow][srcCol].piece;
+                            board.remainPieces[clr * 10 + pie] = board.remainPieces[clr * 10 + pie] - 1;
                             break;
                         }
                         case 'M':
@@ -255,7 +248,7 @@ void Game::noStep() {
     sendMessage("SN");
 }
 
-void Game::saveChessBoard() {
+void Game::saveChessBoard(bool saveToFile) {
     if(curRound != record.size() - 1)
     {
         Record temp;
@@ -298,7 +291,17 @@ void Game::saveChessBoard() {
 
 void Game::setBoard(Board &b)
 {
+    if(board_copy.empty())
+        board_copy = board;
     this->board = b;
+}
+
+void Game::resetBoard()
+{
+    board = board_copy;
+    board_copy.reset();
+    if(ownColor == -1)
+        board.reset();
 }
 
 void Game::step() {
@@ -456,38 +459,65 @@ void Game::step() {
         movePiece(srcRow, srcCol, desRow, desCol);
 }
 
-int Game::alphaBetaMax(Board& b, int depth, int alpha, int beta)
+double Game::alphaBetaMax(Board& b, int depth, double alpha, double beta)
 {
-   if (depth == 0)
+    if (depth == 0)
        return evaluate(b);
-   QList<Board> moves;
-   QList<QList<int> > msg;
-   makeMoves(b, ownColor, moves, msg);
-   if(moves.size() != msg.size())
-   {
+    QList<Board> moves;
+    QList<QList<int> > msg;
+    makeMoves(b, ownColor, moves, msg);
+    if(moves.size() != msg.size())
+    {
        qDebug() << "not equal";
        exit(1);
-   }
-   for(int i = 0; i < moves.size(); ++i)
-   {
-      int score = alphaBetaMin(moves[i], depth - 1, alpha, beta);
-      //qDebug() << "score:" << score;
-      if(score >= beta)
-         return beta;   //beta-cutoff
-      if(score > alpha)
-      {
-          if(depth == 4)
-          {
-             movemsg = msg[i];
-             //qDebug() << "score:" << score;
-          }
-         alpha = score; // alpha acts like max in MiniMax
-      }
-   }
-   return alpha;
+    }
+    for(int i = 0; i < moves.size(); ++i)
+    {
+        double score = alphaBetaMin(moves[i], depth - 1, alpha, beta);
+        //qDebug() << "score:" << score;
+        if(score >= beta)
+            return beta;   //beta-cutoff
+        if(score > alpha)
+        {
+            if(depth == 4)
+            {
+                qDebug() << "move score:" << score;
+                movemsg.clear();
+                movemsg = msg[i];
+                //qDebug() << "score:" << score;
+            }
+            alpha = score; // alpha acts like max in MiniMax
+        }
+    }
+    for (int r = 0; r < ROWS; r++)
+    {
+        for (int c = 0; c < COLS; c++)
+        {
+            if(b[r][c].empty)
+                continue;
+            if(!b[r][c].valid)
+            {
+                double score = evaluateDark(b, r, c);
+                if(score >= beta)
+                   return beta;
+                if(score > alpha)
+                {
+                    if(depth == 4)
+                    {
+                        movemsg.clear();
+                        movemsg = QList<int>{r,c};
+                    }
+                    alpha = score;
+                }
+            }
+        }
+    }
+    if(alpha < -10000.0)
+        return evaluate(b);
+    return alpha;
 }
 
-int Game::alphaBetaMin(Board& b, int depth, int alpha, int beta)
+double Game::alphaBetaMin(Board& b, int depth, double alpha, double beta)
 {
    if (depth == 0)
        return -evaluate(b);
@@ -501,15 +531,88 @@ int Game::alphaBetaMin(Board& b, int depth, int alpha, int beta)
    }
    for(int i = 0; i < moves.size(); ++i)
    {
-      int score = alphaBetaMax(moves[i], depth - 1, alpha, beta);
+      double score = alphaBetaMax(moves[i], depth - 1, alpha, beta);
       if(score <= alpha)
          return alpha; //alpha-cutoff
       if(score < beta)
          beta = score; // beta acts like min in MiniMax
    }
-   if(moves.empty())
+   for (int r = 0; r < ROWS; r++)
+   {
+       for (int c = 0; c < COLS; c++)
+       {
+           if(b[r][c].empty)
+               continue;
+           if(!b[r][c].valid)
+           {
+               double score = -evaluateDark(b, r, c);
+               if(score <= alpha)
+                  return alpha; //alpha-cutoff
+               if(score < beta)
+                  beta = score; // beta acts like min in MiniMax
+           }
+       }
+   }
+   if(beta >= 10000.0)
        return -evaluate(b);
    return beta;
+}
+
+double Game::evaluateDark(const Board &b, int r, int c)
+{
+    double score = 0;
+    int cnt = 0;
+
+    for(int i = 0; i <= 6; i++)
+    {
+        if(b.remainPieces[i] == 0)
+            continue;
+        else if(b.remainPieces[i] == 1)
+        {
+            Board tempb = b;
+            tempb[r][c].valid = true;
+            tempb[r][c].color = 0;
+            tempb[r][c].piece = i;
+            score += evaluate(tempb);
+            cnt++;
+        }
+        else if(b.remainPieces[i] == 2)
+        {
+            Board tempb = b;
+            tempb[r][c].valid = true;
+            tempb[r][c].color = 0;
+            tempb[r][c].piece = i;
+            score = score + 2 * evaluate(tempb);
+            cnt += 2;
+        }
+    }
+    for(int i = 10; i <= 16; i++)
+    {
+        if(b.remainPieces[i] == 0)
+            continue;
+        else if(b.remainPieces[i] == 1)
+        {
+            Board tempb = b;
+            tempb[r][c].valid = true;
+            tempb[r][c].color = 1;
+            tempb[r][c].piece = i - 10;
+            score += evaluate(tempb);
+            cnt++;
+        }
+        else if(b.remainPieces[i] == 2)
+        {
+            Board tempb = b;
+            tempb[r][c].valid = true;
+            tempb[r][c].color = 1;
+            tempb[r][c].piece = i - 10;
+            score = score + 2 * evaluate(tempb);
+            cnt += 2;
+        }
+    }
+    score = score / cnt;
+    //qDebug() << "evaluate dark:" << score;
+    return score;
+
 }
 
 void Game::makeMoves(Board& b, int color, QList<Board> & moves, QList<QList<int> > &msg)
@@ -591,47 +694,34 @@ void Game::makeMoves(Board& b, int color, QList<Board> & moves, QList<QList<int>
                     }
                 }
             }
-            /*
-            else if(!b[r][c].valid)
-            {
-                for(int i = 0; i < 4; ++i)
-                {
-                    int nr = r + mr2[i];
-                    int nc = c + mc2[i];
-                    if(nr < 0 || nr >= ROWS || nc < 0 || nc >= COLS)
-                        continue;
-                    if(b[nr][nc].piece == 1 && b[nr][nc].color == ownColor)
-                    {
-                        int tempScore = evaluate(b) + 2;
-                        if(tempScore > score)
-                        {
-                            score = tempScore;
-                            srcRow = r;
-                            srcCol = c;
-                            desRow = -1;
-                            desCol = -1;
-                        }
-                    }
-                }
-                int tempScore = evaluate(b) + 1;
-                if(tempScore > score)
-                {
-                    score = tempScore;
-                    srcRow = r;
-                    srcCol = c;
-                    desRow = -1;
-                    desCol = -1;
-                }
-            }
-            */
         }
     }
 }
 
-
-int Game::evaluate(Board& b)
+void Game::getScore(const Board& b, int &ownScore, int &oppositeScore)
 {
-    int score = 0;
+    ownScore = 0;
+    oppositeScore = 0;
+    for (int r = 0; r < ROWS; r++)
+    {
+        for (int c = 0; c < COLS; c++)
+        {
+            if(b[r][c].empty)
+                continue;
+            if(b[r][c].valid)
+            {
+                if(b[r][c].color == ownColor)
+                    ownScore += (b[r][c].piece + 1);
+                else
+                    oppositeScore += (b[r][c].piece + 1);
+            }
+        }
+    }
+}
+
+double Game::evaluate(const Board& b)
+{
+    double score = 0.0;
 
     //piese value
     for (int r = 0; r < ROWS; r++)
@@ -649,7 +739,7 @@ int Game::evaluate(Board& b)
             }
         }
     }
-
+    double eatScore = 0;
     for (int r = 0; r < ROWS; r++)
     {
         for (int c = 0; c < COLS; c++)
@@ -668,9 +758,9 @@ int Game::evaluate(Board& b)
                     if(!board[(r+nr)/2][(c+nc)/2].empty && !board[nr][nc].empty && board[nr][nc].valid)
                     {
                         if(board[r][c].color == ownColor && board[nr][nc].color != ownColor)
-                            score += (board[nr][nc].piece + 1);
+                            eatScore += (board[nr][nc].piece + 1);
                         else if(board[r][c].color != ownColor && board[nr][nc].color == ownColor)
-                            score -= (board[nr][nc].piece + 1);
+                            eatScore -= (board[nr][nc].piece + 1);
                     }
                 }
             }
@@ -691,14 +781,15 @@ int Game::evaluate(Board& b)
                         if((board[nr][nc].piece == 0 && board[r][c].piece == 6))
                             continue;
                         if(board[r][c].color == ownColor && board[nr][nc].color != ownColor)
-                            score += (board[nr][nc].piece + 1);
+                            eatScore += (board[nr][nc].piece + 1);
                         else if(board[r][c].color != ownColor && board[nr][nc].color == ownColor)
-                            score -= (board[nr][nc].piece + 1);
+                            eatScore -= (board[nr][nc].piece + 1);
                     }
                 }
             }
         }
     }
+    score = score + eatScore * factor;
     return score;
 }
 
@@ -737,9 +828,11 @@ int Game::tryMove(int r, int c)
 void Game::minimaxStep()
 {
     movemsg.clear();
+    /*
     int abscore = alphaBetaMax(board, 4, -100000, 100000);
     int score = -100000;
     int srcRow = -1, srcCol = -1;
+
     for (int r = 0; r < ROWS; r++)
     {
         for (int c = 0; c < COLS; c++)
@@ -775,6 +868,7 @@ void Game::minimaxStep()
             }
         }
     }
+
     if(score > abscore)
     {
         reversePiece(srcRow, srcCol);
@@ -791,17 +885,34 @@ void Game::minimaxStep()
         qDebug() << "nostep";
         noStep();
     }
+    */
+    alphaBetaMax(board, 4, -100000, 100000);
+    if(movemsg.size() == 2)
+    {
+        reversePiece(movemsg.at(0), movemsg.at(1));
+        qDebug() << "reverse:" << movemsg.at(0) << movemsg.at(1);
+    }
+    else if(movemsg.size() == 4)
+    {
+        movePiece(movemsg.at(0), movemsg.at(1), movemsg.at(2), movemsg.at(3));
+        qDebug() << "move:" << movemsg.at(0) << movemsg.at(1) << movemsg.at(2) << movemsg.at(3);
+    }
+    else
+    {
+        qDebug() << "nostep";
+        noStep();
+    }
 }
 
 void Game::receiveMessage()
 {
-    qDebug() << "tcp size:" << tcpSocket->size();
+    //qDebug() << "tcp size:" << tcpSocket->size();
 
     while(tcpSocket->size() != 0)
     {
         memset(recvBuf, 0, BUFSIZE);
         tcpSocket->read(recvBuf, BUFSIZE);
-        qDebug() << "receive msg:" << recvBuf;
+        //qDebug() << "receive msg:" << recvBuf;
         if(b_roundStart)
         {
             roundStart(curRound);
@@ -812,6 +923,11 @@ void Game::receiveMessage()
             curPlayColor = (curPlayColor + 1) % 2;
             if(observe() > 0)
             {
+                int s1 = 0, s2 = 0;
+                getScore(board, s1, s2);
+                ownScore += s1;
+                oppoScore += s2;
+
                 curPlayColor = -1;
                 roundOver(curRound);
                 if(curRound == 2)
@@ -820,6 +936,27 @@ void Game::receiveMessage()
                     tcpSocket->close();
                     emit statusChanged("Close socket");
                     curRound = 0;
+
+                    if(b_learn)
+                    {
+                        if(learn_cnt > 0)
+                        {
+                            learn_cnt--;
+                            if((learn_cnt % 10) == 0)
+                            {
+                                QFile file(QString("record/score-4.txt"));
+                                file.open(QFile::Append);
+                                QTextStream fout(&file);
+                                fout << factor << "\t" << ownScore/30.0 << "\t" << oppoScore/30.0 << endl;
+                                ownScore = 0.0;
+                                oppoScore = 0.0;
+                                factor += 0.01;
+                            }
+                            this->connectToServer(this->ip_, this->port_);
+                            this->authorize(this->id_.toStdString().data(), this->pwd_.toStdString().data());
+                        }
+                    }
+
                     return;
                 }
                 else
@@ -849,7 +986,7 @@ int Game::sendMessage(const char* msg)
     memset(sendBuf, 0, BUFSIZE);
     memcpy(sendBuf, msg, len);
     tcpSocket->write(sendBuf, BUFSIZE);
-    qDebug() << "sendmsg:" <<msg;
+    //qDebug() << "sendmsg:" <<msg;
     return 1;
 }
 
@@ -858,12 +995,14 @@ void Game::displayError(QAbstractSocket::SocketError)
     qDebug() << tcpSocket->errorString();
 }
 
-int Game::connectToServer()
+void Game::connectToServer(QString ip, int port)
 {
-    qDebug() << "Connect server: " << SERVER_IP << ":" << SERVER_PORT;
+    emit statusChanged(QString("Connect server: ") + ip + ":" + QString::number(port));
     tcpSocket->abort();
-    tcpSocket->connectToHost(QString(SERVER_IP), SERVER_PORT);
-    return 1;
+    tcpSocket->connectToHost(ip, port);
+    this->ip_ = ip;
+    this->port_ = port;
+    return;
 }
 
 void Game::setAiMode(bool mode)
@@ -871,3 +1010,9 @@ void Game::setAiMode(bool mode)
     b_aimove = mode;
 }
 
+void Game::learn(int cnt)
+{
+    b_learn = true;
+    learn_cnt = cnt;
+    b_aimove = true;
+}

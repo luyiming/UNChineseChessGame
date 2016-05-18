@@ -68,6 +68,16 @@ void ReviewDialog::on_jumpButton_clicked()
         return;
     int round = ui->roundBox->currentText().toInt();
     int num = ui->numLine->text().toInt();
+    if(num > record.at(round).boards.size() - 1)
+    {
+        ui->numLine->setText(QString::number(record.at(round).boards.size() - 1));
+        return;
+    }
+    else if(num < 0)
+    {
+        ui->numLine->setText(QString::number(0));
+        return;
+    }
     emit signal_review(record.at(round).boards.at(num));
 }
 
@@ -77,8 +87,16 @@ void ReviewDialog::on_nextButton_clicked()
         return;
     int round = ui->roundBox->currentText().toInt();
     int num = ui->numLine->text().toInt() + 1;
-    if(num >= record[round].boards.size())
+    if(num > record.at(round).boards.size() - 1)
+    {
+        ui->numLine->setText(QString::number(record.at(round).boards.size() - 1));
         return;
+    }
+    else if(num < 0)
+    {
+        ui->numLine->setText(QString::number(0));
+        return;
+    }
     ui->numLine->setText(QString::number(num));
     emit signal_review(record.at(round).boards.at(num));
 }
@@ -89,8 +107,16 @@ void ReviewDialog::on_backButton_clicked()
         return;
     int round = ui->roundBox->currentText().toInt();
     int num = ui->numLine->text().toInt() - 1;
-    if(num < 0)
+    if(num > record.at(round).boards.size() - 1)
+    {
+        ui->numLine->setText(QString::number(record.at(round).boards.size() - 1));
         return;
+    }
+    else if(num < 0)
+    {
+        ui->numLine->setText(QString::number(0));
+        return;
+    }
     ui->numLine->setText(QString::number(num));
     emit signal_review(record.at(round).boards.at(num));
 }
@@ -195,5 +221,6 @@ void ReviewDialog::on_deleteButton_clicked()
 
 void ReviewDialog::on_quitButton_clicked()
 {
+    emit reset_board();
     close();
 }

@@ -2,6 +2,8 @@
 #define SQUARE_H
 
 #include <QList>
+#include <QSet>
+#include <QMap>
 
 #define ROWS 4
 #define COLS 4
@@ -26,6 +28,8 @@ private:
     Square board[ROWS][COLS];
 
 public:
+    int remainPieces[20]  = {1};
+
     Square* operator[](int i)
     {
         return board[i];
@@ -39,6 +43,8 @@ public:
         for (int r = 0; r < ROWS; r++)
             for (int c = 0; c < COLS; c++)
                 board[r][c].reset();
+        remainPieces[0] = 2;
+        remainPieces[10] = 2;
     }
     Board(const Board& b)
     {
@@ -48,6 +54,9 @@ public:
     }
     Board& operator = (Board& rhs);
     Board& operator = (const Board& rhs);
+
+    bool empty();
+    void reset();
 };
 
 struct Record

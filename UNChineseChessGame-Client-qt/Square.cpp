@@ -51,6 +51,8 @@ Board& Board::operator = (Board& rhs)
     for (int r = 0; r < ROWS; r++)
         for (int c = 0; c < COLS; c++)
             board[r][c] = rhs[r][c];
+    for(int i = 0; i < 20; i++)
+        this->remainPieces[i] = rhs.remainPieces[i];
     return *this;
 }
 
@@ -59,5 +61,30 @@ Board& Board::operator = (const Board& rhs)
     for (int r = 0; r < ROWS; r++)
         for (int c = 0; c < COLS; c++)
             board[r][c] = rhs[r][c];
+    for(int i = 0; i < 20; i++)
+        this->remainPieces[i] = rhs.remainPieces[i];
     return *this;
+}
+
+bool Board::empty()
+{
+    for (int r = 0; r < ROWS; r++)
+        for (int c = 0; c < COLS; c++)
+            if(this->board[r][c].color != -1)
+                return false;
+    return true;
+}
+
+void Board::reset()
+{
+    for (int r = 0; r < ROWS; r++)
+        for (int c = 0; c < COLS; c++)
+            this->board[r][c].reset();
+
+    for(int i = 0; i < 20; i++)
+        remainPieces[i] = 1;
+
+    remainPieces[0] = 2;
+    remainPieces[10] = 2;
+    return;
 }

@@ -24,6 +24,7 @@ public:
 
 signals:
     void signal_review(Board board);
+    void reset_board();
 
 private slots:
     void on_jumpButton_clicked();

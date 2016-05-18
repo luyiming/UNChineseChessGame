@@ -208,6 +208,7 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
 
 void MainWindow::on_connectButton_clicked()
 {
+    game->connectToServer(ui->ipLine->text(), ui->portLine->text().toInt());
     char id_[100] = {0};
     char password_[100] = {0};
     memcpy(id_, ui->idLine->text().toStdString().data(), ui->idLine->text().size());
@@ -234,11 +235,13 @@ void MainWindow::on_quitButton_clicked()
 void MainWindow::on_aiButton_clicked()
 {
     game->setAiMode(true);
+
+    game->connectToServer(ui->ipLine->text(), ui->portLine->text().toInt());
+
     char id_[100] = {0};
     char password_[100] = {0};
     memcpy(id_, ui->idLine->text().toStdString().data(), ui->idLine->text().size());
     memcpy(password_, ui->pwdLine->text().toStdString().data(), ui->pwdLine->text().size());
-
     game->authorize(id_, password_);
 }
 
@@ -251,6 +254,14 @@ void MainWindow::on_nextButton_clicked()
     countDown(true);
     countDownTimer->start(1000);
 
+//    game->learn(9);
+//    game->connectToServer(ui->ipLine->text(), ui->portLine->text().toInt());
+
+//    char id_[100] = {0};
+//    char password_[100] = {0};
+//    memcpy(id_, ui->idLine->text().toStdString().data(), ui->idLine->text().size());
+//    memcpy(password_, ui->pwdLine->text().toStdString().data(), ui->pwdLine->text().size());
+//    game->authorize(id_, password_);
     update();
 }
 
@@ -259,6 +270,7 @@ void MainWindow::on_reviewButton_clicked()
 {
     ReviewDialog *reviewDialog = new ReviewDialog(this);
     connect(reviewDialog, &ReviewDialog::signal_review, [&](Board board){game->setBoard(board); update();});
+    connect(reviewDialog, &ReviewDialog::reset_board, [&](){game->resetBoard();});
     reviewDialog->show();
 }
 

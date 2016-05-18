@@ -20,16 +20,34 @@ signals:
 
 public:
 
-    int curRound = 0;
-    bool saveToFile = false;
-    int ownColor = -1, oppositeColor = -1;
-    bool isSelected = false;
     Board board;
     QList<Record> record;
 
-public:
     Game();
+
+    void setBoard(Board &board);
+    void resetBoard();
+    int tryMove(int r, int c);
+    void setAiMode(bool mode);
+    void connectToServer(QString ip, int port);
     void authorize(const char *id, const char *pass);
+
+    void step();
+    void minimaxStep();
+
+    void learn(int cnt);
+
+private:
+
+    bool b_roundStart = false;
+    bool b_aimove = false;
+    int curPlayColor = -1;
+    int curRound = 0;
+    int ownColor = -1, oppositeColor = -1;
+    bool isSelected = false;
+    Board board_copy;
+    QTcpSocket *tcpSocket;
+
     void gameStart();
     void gameOver();
     void roundStart(int round);
@@ -39,29 +57,28 @@ public:
     void reversePiece(int row, int col);
     void movePiece(int srcRow, int srcCol, int desRow, int desCol);
     void noStep();
-    void step();
 
-    void setBoard(Board &board);
-    int tryMove(int r, int c);
-    void saveChessBoard();
-    int alphaBetaMax(Board& b, int depth, int alpha, int beta);
-    int alphaBetaMin(Board& b, int depth, int alpha, int beta);
+    void saveChessBoard(bool saveToFile = false);
+    double alphaBetaMax(Board& b, int depth, double alpha, double beta);
+    double alphaBetaMin(Board& b, int depth, double alpha, double beta);
     void makeMoves(Board& b, int color, QList<Board>& moves, QList<QList<int> > &msg);
-    int evaluate(Board& b);
-    void minimaxStep();
-    void reset();
+    double evaluate(const Board& b);
+    double evaluateDark(const Board &b, int r, int c);
 
-    void setAiMode(bool mode);
-private:
     void receiveMessage();
-
     void displayError(QAbstractSocket::SocketError);
-    int connectToServer();
     int sendMessage(const char* msg);
-    bool b_roundStart = false;
-    bool b_aimove = false;
-    int curPlayColor = -1;
-    QTcpSocket *tcpSocket;
+
+    void getScore(const Board& b, int &ownScore, int &oppositeScore);
+
+
+    bool b_learn = false;
+    int learn_cnt = -1;
+    QString id_;
+    QString pwd_;
+    QString ip_;
+    int port_;
+    double ownScore = 0.0, oppoScore = 0.0;
 };
 
 #endif // MAINWINDOW_H
